@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\Artem\source\repos\SIDKhanta\misis2024f-24-01-leonov-a-d\prj.lab\complex\complex.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\Artem\source\repos\SIDKhanta\misis2024f-24-01-leonov-a-d\prj.lab\complex\complex.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Artem\source\repos\SIDKhanta\misis2024f-24-01-leonov-a-d\prj.lab\complex\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{3ED3375A-CDC4-3319-A3EF-4E471F3C9605}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{966A4049-69D1-3ADC-BD88-FC6228682C2A}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

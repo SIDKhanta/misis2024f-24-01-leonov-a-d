@@ -1,0 +1,10 @@
+^C:\USERS\ARTEM\SOURCE\REPOS\SIDKHANTA\MISIS2024F-24-01-LEONOV-A-D\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Artem/source/repos/SIDKhanta/misis2024f-24-01-leonov-a-d -BC:/Users/Artem/source/repos/SIDKhanta/misis2024f-24-01-leonov-a-d/build --check-stamp-file C:/Users/Artem/source/repos/SIDKhanta/misis2024f-24-01-leonov-a-d/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
