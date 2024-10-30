@@ -1,0 +1,9 @@
+C:/Users/Artem/source/repos/SIDKhanta/misis2024f-24-01-leonov-a-d/out/build/x64-Debug/CMakeFiles/edit_cache.dir
+C:/Users/Artem/source/repos/SIDKhanta/misis2024f-24-01-leonov-a-d/out/build/x64-Debug/CMakeFiles/rebuild_cache.dir
+C:/Users/Artem/source/repos/SIDKhanta/misis2024f-24-01-leonov-a-d/out/build/x64-Debug/prj.codeforces/CMakeFiles/edit_cache.dir
+C:/Users/Artem/source/repos/SIDKhanta/misis2024f-24-01-leonov-a-d/out/build/x64-Debug/prj.codeforces/CMakeFiles/rebuild_cache.dir
+C:/Users/Artem/source/repos/SIDKhanta/misis2024f-24-01-leonov-a-d/out/build/x64-Debug/prj.lab/CMakeFiles/edit_cache.dir
+C:/Users/Artem/source/repos/SIDKhanta/misis2024f-24-01-leonov-a-d/out/build/x64-Debug/prj.lab/CMakeFiles/rebuild_cache.dir
+C:/Users/Artem/source/repos/SIDKhanta/misis2024f-24-01-leonov-a-d/out/build/x64-Debug/prj.lab/complex/CMakeFiles/complex.dir
+C:/Users/Artem/source/repos/SIDKhanta/misis2024f-24-01-leonov-a-d/out/build/x64-Debug/prj.lab/complex/CMakeFiles/edit_cache.dir
+C:/Users/Artem/source/repos/SIDKhanta/misis2024f-24-01-leonov-a-d/out/build/x64-Debug/prj.lab/complex/CMakeFiles/rebuild_cache.dir
