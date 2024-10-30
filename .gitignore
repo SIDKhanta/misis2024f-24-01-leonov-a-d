@@ -34,3 +34,7 @@
 .vs/
 *.opendb
 *.VC.db
+bin.dbg/
+build/
+out/
+*.json
