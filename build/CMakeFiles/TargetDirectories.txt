@@ -1,5 +1,0 @@
-C:/Users/Artem/source/repos/SIDKhanta/misis2024f-24-01-leonov-a-d/build/CMakeFiles/ALL_BUILD.dir
-C:/Users/Artem/source/repos/SIDKhanta/misis2024f-24-01-leonov-a-d/build/CMakeFiles/ZERO_CHECK.dir
-C:/Users/Artem/source/repos/SIDKhanta/misis2024f-24-01-leonov-a-d/build/prj.lab/complex/CMakeFiles/complex.dir
-C:/Users/Artem/source/repos/SIDKhanta/misis2024f-24-01-leonov-a-d/build/prj.tests/CMakeFiles/complex_test.dir
-C:/Users/Artem/source/repos/SIDKhanta/misis2024f-24-01-leonov-a-d/build/prj.tests/CMakeFiles/complex_doctest.dir
