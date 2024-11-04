@@ -69,24 +69,3 @@ std::ostream& operator<<(std::ostream& os, const complex& c) {
 std::istream& operator>>(std::istream& is, complex& c) {
     return c.readfrom(is);
 }
-
-int main() {
-    complex n1, n2;
-
-    std::cin >> n1;
-    std::cin >> n2;
-
-    complex sum = n1 + n2;
-    std::cout << sum << "\n";
-
-    complex raz = n1 - n2;
-    std::cout << raz << "\n";
-
-    complex umn = n1 * n2;
-    std::cout << umn << "\n";
-
-    complex del = n1 / n2;
-    std::cout << del;
-
-    return 0;
-}

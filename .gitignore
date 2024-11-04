@@ -27,14 +27,13 @@
 *.lib
 
 # Executables
-*.exe
 *.out
 *.app
 
-.vs/
-*.opendb
-*.VC.db
-bin.dbg/
-build/
+# MyIgnore
 out/
+build/
+doctest/
+bin.dbg/
 *.json
+.vs/
