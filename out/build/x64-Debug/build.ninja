@@ -68,6 +68,894 @@ build rebuild_cache: phony CMakeFiles\rebuild_cache.util
 # C:/Users/Artem/source/repos/SIDKhanta/misis2024f-24-01-leonov-a-d/CMakeLists.txt
 # =============================================================================
 
+# =============================================================================
+# Object build statements for EXECUTABLE target 0004a
+
+
+#############################################
+# Order-only phony target for 0004a
+
+build cmake_object_order_depends_target_0004a: phony || prj.codeforces\CMakeFiles\0004a.dir
+
+build prj.codeforces\CMakeFiles\0004a.dir\0004a.cpp.obj: CXX_COMPILER__0004a_Debug C$:\Users\Artem\source\repos\SIDKhanta\misis2024f-24-01-leonov-a-d\prj.codeforces\0004a.cpp || cmake_object_order_depends_target_0004a
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd -std:c++20
+  INCLUDES = -IC:\Users\Artem\source\repos\SIDKhanta\misis2024f-24-01-leonov-a-d\prj.lab
+  OBJECT_DIR = prj.codeforces\CMakeFiles\0004a.dir
+  OBJECT_FILE_DIR = prj.codeforces\CMakeFiles\0004a.dir
+  TARGET_COMPILE_PDB = prj.codeforces\CMakeFiles\0004a.dir\
+  TARGET_PDB = ..\..\..\bin.dbg\0004a.pdb
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 0004a
+
+
+#############################################
+# Link the executable ..\..\..\bin.dbg\0004a.exe
+
+build ..\..\..\bin.dbg\0004a.exe: CXX_EXECUTABLE_LINKER__0004a_Debug prj.codeforces\CMakeFiles\0004a.dir\0004a.cpp.obj
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
+  LINK_LIBRARIES = kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  OBJECT_DIR = prj.codeforces\CMakeFiles\0004a.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = prj.codeforces\CMakeFiles\0004a.dir\
+  TARGET_FILE = ..\..\..\bin.dbg\0004a.exe
+  TARGET_IMPLIB = prj.codeforces\0004a.lib
+  TARGET_PDB = ..\..\..\bin.dbg\0004a.pdb
+
+# =============================================================================
+# Object build statements for EXECUTABLE target 0006a
+
+
+#############################################
+# Order-only phony target for 0006a
+
+build cmake_object_order_depends_target_0006a: phony || prj.codeforces\CMakeFiles\0006a.dir
+
+build prj.codeforces\CMakeFiles\0006a.dir\0006a.cpp.obj: CXX_COMPILER__0006a_Debug C$:\Users\Artem\source\repos\SIDKhanta\misis2024f-24-01-leonov-a-d\prj.codeforces\0006a.cpp || cmake_object_order_depends_target_0006a
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd -std:c++20
+  INCLUDES = -IC:\Users\Artem\source\repos\SIDKhanta\misis2024f-24-01-leonov-a-d\prj.lab
+  OBJECT_DIR = prj.codeforces\CMakeFiles\0006a.dir
+  OBJECT_FILE_DIR = prj.codeforces\CMakeFiles\0006a.dir
+  TARGET_COMPILE_PDB = prj.codeforces\CMakeFiles\0006a.dir\
+  TARGET_PDB = ..\..\..\bin.dbg\0006a.pdb
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 0006a
+
+
+#############################################
+# Link the executable ..\..\..\bin.dbg\0006a.exe
+
+build ..\..\..\bin.dbg\0006a.exe: CXX_EXECUTABLE_LINKER__0006a_Debug prj.codeforces\CMakeFiles\0006a.dir\0006a.cpp.obj
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
+  LINK_LIBRARIES = kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  OBJECT_DIR = prj.codeforces\CMakeFiles\0006a.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = prj.codeforces\CMakeFiles\0006a.dir\
+  TARGET_FILE = ..\..\..\bin.dbg\0006a.exe
+  TARGET_IMPLIB = prj.codeforces\0006a.lib
+  TARGET_PDB = ..\..\..\bin.dbg\0006a.pdb
+
+# =============================================================================
+# Object build statements for EXECUTABLE target 0262a
+
+
+#############################################
+# Order-only phony target for 0262a
+
+build cmake_object_order_depends_target_0262a: phony || prj.codeforces\CMakeFiles\0262a.dir
+
+build prj.codeforces\CMakeFiles\0262a.dir\0262a.cpp.obj: CXX_COMPILER__0262a_Debug C$:\Users\Artem\source\repos\SIDKhanta\misis2024f-24-01-leonov-a-d\prj.codeforces\0262a.cpp || cmake_object_order_depends_target_0262a
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd -std:c++20
+  INCLUDES = -IC:\Users\Artem\source\repos\SIDKhanta\misis2024f-24-01-leonov-a-d\prj.lab
+  OBJECT_DIR = prj.codeforces\CMakeFiles\0262a.dir
+  OBJECT_FILE_DIR = prj.codeforces\CMakeFiles\0262a.dir
+  TARGET_COMPILE_PDB = prj.codeforces\CMakeFiles\0262a.dir\
+  TARGET_PDB = ..\..\..\bin.dbg\0262a.pdb
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 0262a
+
+
+#############################################
+# Link the executable ..\..\..\bin.dbg\0262a.exe
+
+build ..\..\..\bin.dbg\0262a.exe: CXX_EXECUTABLE_LINKER__0262a_Debug prj.codeforces\CMakeFiles\0262a.dir\0262a.cpp.obj
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
+  LINK_LIBRARIES = kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  OBJECT_DIR = prj.codeforces\CMakeFiles\0262a.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = prj.codeforces\CMakeFiles\0262a.dir\
+  TARGET_FILE = ..\..\..\bin.dbg\0262a.exe
+  TARGET_IMPLIB = prj.codeforces\0262a.lib
+  TARGET_PDB = ..\..\..\bin.dbg\0262a.pdb
+
+# =============================================================================
+# Object build statements for EXECUTABLE target 0262b
+
+
+#############################################
+# Order-only phony target for 0262b
+
+build cmake_object_order_depends_target_0262b: phony || prj.codeforces\CMakeFiles\0262b.dir
+
+build prj.codeforces\CMakeFiles\0262b.dir\0262b.cpp.obj: CXX_COMPILER__0262b_Debug C$:\Users\Artem\source\repos\SIDKhanta\misis2024f-24-01-leonov-a-d\prj.codeforces\0262b.cpp || cmake_object_order_depends_target_0262b
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd -std:c++20
+  INCLUDES = -IC:\Users\Artem\source\repos\SIDKhanta\misis2024f-24-01-leonov-a-d\prj.lab
+  OBJECT_DIR = prj.codeforces\CMakeFiles\0262b.dir
+  OBJECT_FILE_DIR = prj.codeforces\CMakeFiles\0262b.dir
+  TARGET_COMPILE_PDB = prj.codeforces\CMakeFiles\0262b.dir\
+  TARGET_PDB = ..\..\..\bin.dbg\0262b.pdb
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 0262b
+
+
+#############################################
+# Link the executable ..\..\..\bin.dbg\0262b.exe
+
+build ..\..\..\bin.dbg\0262b.exe: CXX_EXECUTABLE_LINKER__0262b_Debug prj.codeforces\CMakeFiles\0262b.dir\0262b.cpp.obj
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
+  LINK_LIBRARIES = kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  OBJECT_DIR = prj.codeforces\CMakeFiles\0262b.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = prj.codeforces\CMakeFiles\0262b.dir\
+  TARGET_FILE = ..\..\..\bin.dbg\0262b.exe
+  TARGET_IMPLIB = prj.codeforces\0262b.lib
+  TARGET_PDB = ..\..\..\bin.dbg\0262b.pdb
+
+# =============================================================================
+# Object build statements for EXECUTABLE target 0263a
+
+
+#############################################
+# Order-only phony target for 0263a
+
+build cmake_object_order_depends_target_0263a: phony || prj.codeforces\CMakeFiles\0263a.dir
+
+build prj.codeforces\CMakeFiles\0263a.dir\0263a.cpp.obj: CXX_COMPILER__0263a_Debug C$:\Users\Artem\source\repos\SIDKhanta\misis2024f-24-01-leonov-a-d\prj.codeforces\0263a.cpp || cmake_object_order_depends_target_0263a
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd -std:c++20
+  INCLUDES = -IC:\Users\Artem\source\repos\SIDKhanta\misis2024f-24-01-leonov-a-d\prj.lab
+  OBJECT_DIR = prj.codeforces\CMakeFiles\0263a.dir
+  OBJECT_FILE_DIR = prj.codeforces\CMakeFiles\0263a.dir
+  TARGET_COMPILE_PDB = prj.codeforces\CMakeFiles\0263a.dir\
+  TARGET_PDB = ..\..\..\bin.dbg\0263a.pdb
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 0263a
+
+
+#############################################
+# Link the executable ..\..\..\bin.dbg\0263a.exe
+
+build ..\..\..\bin.dbg\0263a.exe: CXX_EXECUTABLE_LINKER__0263a_Debug prj.codeforces\CMakeFiles\0263a.dir\0263a.cpp.obj
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
+  LINK_LIBRARIES = kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  OBJECT_DIR = prj.codeforces\CMakeFiles\0263a.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = prj.codeforces\CMakeFiles\0263a.dir\
+  TARGET_FILE = ..\..\..\bin.dbg\0263a.exe
+  TARGET_IMPLIB = prj.codeforces\0263a.lib
+  TARGET_PDB = ..\..\..\bin.dbg\0263a.pdb
+
+# =============================================================================
+# Object build statements for EXECUTABLE target 0271a
+
+
+#############################################
+# Order-only phony target for 0271a
+
+build cmake_object_order_depends_target_0271a: phony || prj.codeforces\CMakeFiles\0271a.dir
+
+build prj.codeforces\CMakeFiles\0271a.dir\0271a.cpp.obj: CXX_COMPILER__0271a_Debug C$:\Users\Artem\source\repos\SIDKhanta\misis2024f-24-01-leonov-a-d\prj.codeforces\0271a.cpp || cmake_object_order_depends_target_0271a
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd -std:c++20
+  INCLUDES = -IC:\Users\Artem\source\repos\SIDKhanta\misis2024f-24-01-leonov-a-d\prj.lab
+  OBJECT_DIR = prj.codeforces\CMakeFiles\0271a.dir
+  OBJECT_FILE_DIR = prj.codeforces\CMakeFiles\0271a.dir
+  TARGET_COMPILE_PDB = prj.codeforces\CMakeFiles\0271a.dir\
+  TARGET_PDB = ..\..\..\bin.dbg\0271a.pdb
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 0271a
+
+
+#############################################
+# Link the executable ..\..\..\bin.dbg\0271a.exe
+
+build ..\..\..\bin.dbg\0271a.exe: CXX_EXECUTABLE_LINKER__0271a_Debug prj.codeforces\CMakeFiles\0271a.dir\0271a.cpp.obj
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
+  LINK_LIBRARIES = kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  OBJECT_DIR = prj.codeforces\CMakeFiles\0271a.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = prj.codeforces\CMakeFiles\0271a.dir\
+  TARGET_FILE = ..\..\..\bin.dbg\0271a.exe
+  TARGET_IMPLIB = prj.codeforces\0271a.lib
+  TARGET_PDB = ..\..\..\bin.dbg\0271a.pdb
+
+# =============================================================================
+# Object build statements for EXECUTABLE target 0276a
+
+
+#############################################
+# Order-only phony target for 0276a
+
+build cmake_object_order_depends_target_0276a: phony || prj.codeforces\CMakeFiles\0276a.dir
+
+build prj.codeforces\CMakeFiles\0276a.dir\0276a.cpp.obj: CXX_COMPILER__0276a_Debug C$:\Users\Artem\source\repos\SIDKhanta\misis2024f-24-01-leonov-a-d\prj.codeforces\0276a.cpp || cmake_object_order_depends_target_0276a
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd -std:c++20
+  INCLUDES = -IC:\Users\Artem\source\repos\SIDKhanta\misis2024f-24-01-leonov-a-d\prj.lab
+  OBJECT_DIR = prj.codeforces\CMakeFiles\0276a.dir
+  OBJECT_FILE_DIR = prj.codeforces\CMakeFiles\0276a.dir
+  TARGET_COMPILE_PDB = prj.codeforces\CMakeFiles\0276a.dir\
+  TARGET_PDB = ..\..\..\bin.dbg\0276a.pdb
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 0276a
+
+
+#############################################
+# Link the executable ..\..\..\bin.dbg\0276a.exe
+
+build ..\..\..\bin.dbg\0276a.exe: CXX_EXECUTABLE_LINKER__0276a_Debug prj.codeforces\CMakeFiles\0276a.dir\0276a.cpp.obj
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
+  LINK_LIBRARIES = kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  OBJECT_DIR = prj.codeforces\CMakeFiles\0276a.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = prj.codeforces\CMakeFiles\0276a.dir\
+  TARGET_FILE = ..\..\..\bin.dbg\0276a.exe
+  TARGET_IMPLIB = prj.codeforces\0276a.lib
+  TARGET_PDB = ..\..\..\bin.dbg\0276a.pdb
+
+# =============================================================================
+# Object build statements for EXECUTABLE target 0339b
+
+
+#############################################
+# Order-only phony target for 0339b
+
+build cmake_object_order_depends_target_0339b: phony || prj.codeforces\CMakeFiles\0339b.dir
+
+build prj.codeforces\CMakeFiles\0339b.dir\0339b.cpp.obj: CXX_COMPILER__0339b_Debug C$:\Users\Artem\source\repos\SIDKhanta\misis2024f-24-01-leonov-a-d\prj.codeforces\0339b.cpp || cmake_object_order_depends_target_0339b
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd -std:c++20
+  INCLUDES = -IC:\Users\Artem\source\repos\SIDKhanta\misis2024f-24-01-leonov-a-d\prj.lab
+  OBJECT_DIR = prj.codeforces\CMakeFiles\0339b.dir
+  OBJECT_FILE_DIR = prj.codeforces\CMakeFiles\0339b.dir
+  TARGET_COMPILE_PDB = prj.codeforces\CMakeFiles\0339b.dir\
+  TARGET_PDB = ..\..\..\bin.dbg\0339b.pdb
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 0339b
+
+
+#############################################
+# Link the executable ..\..\..\bin.dbg\0339b.exe
+
+build ..\..\..\bin.dbg\0339b.exe: CXX_EXECUTABLE_LINKER__0339b_Debug prj.codeforces\CMakeFiles\0339b.dir\0339b.cpp.obj
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
+  LINK_LIBRARIES = kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  OBJECT_DIR = prj.codeforces\CMakeFiles\0339b.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = prj.codeforces\CMakeFiles\0339b.dir\
+  TARGET_FILE = ..\..\..\bin.dbg\0339b.exe
+  TARGET_IMPLIB = prj.codeforces\0339b.lib
+  TARGET_PDB = ..\..\..\bin.dbg\0339b.pdb
+
+# =============================================================================
+# Object build statements for EXECUTABLE target 0617a
+
+
+#############################################
+# Order-only phony target for 0617a
+
+build cmake_object_order_depends_target_0617a: phony || prj.codeforces\CMakeFiles\0617a.dir
+
+build prj.codeforces\CMakeFiles\0617a.dir\0617a.cpp.obj: CXX_COMPILER__0617a_Debug C$:\Users\Artem\source\repos\SIDKhanta\misis2024f-24-01-leonov-a-d\prj.codeforces\0617a.cpp || cmake_object_order_depends_target_0617a
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd -std:c++20
+  INCLUDES = -IC:\Users\Artem\source\repos\SIDKhanta\misis2024f-24-01-leonov-a-d\prj.lab
+  OBJECT_DIR = prj.codeforces\CMakeFiles\0617a.dir
+  OBJECT_FILE_DIR = prj.codeforces\CMakeFiles\0617a.dir
+  TARGET_COMPILE_PDB = prj.codeforces\CMakeFiles\0617a.dir\
+  TARGET_PDB = ..\..\..\bin.dbg\0617a.pdb
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 0617a
+
+
+#############################################
+# Link the executable ..\..\..\bin.dbg\0617a.exe
+
+build ..\..\..\bin.dbg\0617a.exe: CXX_EXECUTABLE_LINKER__0617a_Debug prj.codeforces\CMakeFiles\0617a.dir\0617a.cpp.obj
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
+  LINK_LIBRARIES = kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  OBJECT_DIR = prj.codeforces\CMakeFiles\0617a.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = prj.codeforces\CMakeFiles\0617a.dir\
+  TARGET_FILE = ..\..\..\bin.dbg\0617a.exe
+  TARGET_IMPLIB = prj.codeforces\0617a.lib
+  TARGET_PDB = ..\..\..\bin.dbg\0617a.pdb
+
+# =============================================================================
+# Object build statements for EXECUTABLE target 0915a
+
+
+#############################################
+# Order-only phony target for 0915a
+
+build cmake_object_order_depends_target_0915a: phony || prj.codeforces\CMakeFiles\0915a.dir
+
+build prj.codeforces\CMakeFiles\0915a.dir\0915a.cpp.obj: CXX_COMPILER__0915a_Debug C$:\Users\Artem\source\repos\SIDKhanta\misis2024f-24-01-leonov-a-d\prj.codeforces\0915a.cpp || cmake_object_order_depends_target_0915a
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd -std:c++20
+  INCLUDES = -IC:\Users\Artem\source\repos\SIDKhanta\misis2024f-24-01-leonov-a-d\prj.lab
+  OBJECT_DIR = prj.codeforces\CMakeFiles\0915a.dir
+  OBJECT_FILE_DIR = prj.codeforces\CMakeFiles\0915a.dir
+  TARGET_COMPILE_PDB = prj.codeforces\CMakeFiles\0915a.dir\
+  TARGET_PDB = ..\..\..\bin.dbg\0915a.pdb
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 0915a
+
+
+#############################################
+# Link the executable ..\..\..\bin.dbg\0915a.exe
+
+build ..\..\..\bin.dbg\0915a.exe: CXX_EXECUTABLE_LINKER__0915a_Debug prj.codeforces\CMakeFiles\0915a.dir\0915a.cpp.obj
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
+  LINK_LIBRARIES = kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  OBJECT_DIR = prj.codeforces\CMakeFiles\0915a.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = prj.codeforces\CMakeFiles\0915a.dir\
+  TARGET_FILE = ..\..\..\bin.dbg\0915a.exe
+  TARGET_IMPLIB = prj.codeforces\0915a.lib
+  TARGET_PDB = ..\..\..\bin.dbg\0915a.pdb
+
+# =============================================================================
+# Object build statements for EXECUTABLE target 0978a
+
+
+#############################################
+# Order-only phony target for 0978a
+
+build cmake_object_order_depends_target_0978a: phony || prj.codeforces\CMakeFiles\0978a.dir
+
+build prj.codeforces\CMakeFiles\0978a.dir\0978a.cpp.obj: CXX_COMPILER__0978a_Debug C$:\Users\Artem\source\repos\SIDKhanta\misis2024f-24-01-leonov-a-d\prj.codeforces\0978a.cpp || cmake_object_order_depends_target_0978a
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd -std:c++20
+  INCLUDES = -IC:\Users\Artem\source\repos\SIDKhanta\misis2024f-24-01-leonov-a-d\prj.lab
+  OBJECT_DIR = prj.codeforces\CMakeFiles\0978a.dir
+  OBJECT_FILE_DIR = prj.codeforces\CMakeFiles\0978a.dir
+  TARGET_COMPILE_PDB = prj.codeforces\CMakeFiles\0978a.dir\
+  TARGET_PDB = ..\..\..\bin.dbg\0978a.pdb
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 0978a
+
+
+#############################################
+# Link the executable ..\..\..\bin.dbg\0978a.exe
+
+build ..\..\..\bin.dbg\0978a.exe: CXX_EXECUTABLE_LINKER__0978a_Debug prj.codeforces\CMakeFiles\0978a.dir\0978a.cpp.obj
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
+  LINK_LIBRARIES = kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  OBJECT_DIR = prj.codeforces\CMakeFiles\0978a.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = prj.codeforces\CMakeFiles\0978a.dir\
+  TARGET_FILE = ..\..\..\bin.dbg\0978a.exe
+  TARGET_IMPLIB = prj.codeforces\0978a.lib
+  TARGET_PDB = ..\..\..\bin.dbg\0978a.pdb
+
+# =============================================================================
+# Object build statements for EXECUTABLE target 0978b
+
+
+#############################################
+# Order-only phony target for 0978b
+
+build cmake_object_order_depends_target_0978b: phony || prj.codeforces\CMakeFiles\0978b.dir
+
+build prj.codeforces\CMakeFiles\0978b.dir\0978b.cpp.obj: CXX_COMPILER__0978b_Debug C$:\Users\Artem\source\repos\SIDKhanta\misis2024f-24-01-leonov-a-d\prj.codeforces\0978b.cpp || cmake_object_order_depends_target_0978b
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd -std:c++20
+  INCLUDES = -IC:\Users\Artem\source\repos\SIDKhanta\misis2024f-24-01-leonov-a-d\prj.lab
+  OBJECT_DIR = prj.codeforces\CMakeFiles\0978b.dir
+  OBJECT_FILE_DIR = prj.codeforces\CMakeFiles\0978b.dir
+  TARGET_COMPILE_PDB = prj.codeforces\CMakeFiles\0978b.dir\
+  TARGET_PDB = ..\..\..\bin.dbg\0978b.pdb
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 0978b
+
+
+#############################################
+# Link the executable ..\..\..\bin.dbg\0978b.exe
+
+build ..\..\..\bin.dbg\0978b.exe: CXX_EXECUTABLE_LINKER__0978b_Debug prj.codeforces\CMakeFiles\0978b.dir\0978b.cpp.obj
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
+  LINK_LIBRARIES = kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  OBJECT_DIR = prj.codeforces\CMakeFiles\0978b.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = prj.codeforces\CMakeFiles\0978b.dir\
+  TARGET_FILE = ..\..\..\bin.dbg\0978b.exe
+  TARGET_IMPLIB = prj.codeforces\0978b.lib
+  TARGET_PDB = ..\..\..\bin.dbg\0978b.pdb
+
+# =============================================================================
+# Object build statements for EXECUTABLE target 0999a
+
+
+#############################################
+# Order-only phony target for 0999a
+
+build cmake_object_order_depends_target_0999a: phony || prj.codeforces\CMakeFiles\0999a.dir
+
+build prj.codeforces\CMakeFiles\0999a.dir\0999a.cpp.obj: CXX_COMPILER__0999a_Debug C$:\Users\Artem\source\repos\SIDKhanta\misis2024f-24-01-leonov-a-d\prj.codeforces\0999a.cpp || cmake_object_order_depends_target_0999a
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd -std:c++20
+  INCLUDES = -IC:\Users\Artem\source\repos\SIDKhanta\misis2024f-24-01-leonov-a-d\prj.lab
+  OBJECT_DIR = prj.codeforces\CMakeFiles\0999a.dir
+  OBJECT_FILE_DIR = prj.codeforces\CMakeFiles\0999a.dir
+  TARGET_COMPILE_PDB = prj.codeforces\CMakeFiles\0999a.dir\
+  TARGET_PDB = ..\..\..\bin.dbg\0999a.pdb
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 0999a
+
+
+#############################################
+# Link the executable ..\..\..\bin.dbg\0999a.exe
+
+build ..\..\..\bin.dbg\0999a.exe: CXX_EXECUTABLE_LINKER__0999a_Debug prj.codeforces\CMakeFiles\0999a.dir\0999a.cpp.obj
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
+  LINK_LIBRARIES = kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  OBJECT_DIR = prj.codeforces\CMakeFiles\0999a.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = prj.codeforces\CMakeFiles\0999a.dir\
+  TARGET_FILE = ..\..\..\bin.dbg\0999a.exe
+  TARGET_IMPLIB = prj.codeforces\0999a.lib
+  TARGET_PDB = ..\..\..\bin.dbg\0999a.pdb
+
+# =============================================================================
+# Object build statements for EXECUTABLE target 1330a
+
+
+#############################################
+# Order-only phony target for 1330a
+
+build cmake_object_order_depends_target_1330a: phony || prj.codeforces\CMakeFiles\1330a.dir
+
+build prj.codeforces\CMakeFiles\1330a.dir\1330a.cpp.obj: CXX_COMPILER__1330a_Debug C$:\Users\Artem\source\repos\SIDKhanta\misis2024f-24-01-leonov-a-d\prj.codeforces\1330a.cpp || cmake_object_order_depends_target_1330a
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd -std:c++20
+  INCLUDES = -IC:\Users\Artem\source\repos\SIDKhanta\misis2024f-24-01-leonov-a-d\prj.lab
+  OBJECT_DIR = prj.codeforces\CMakeFiles\1330a.dir
+  OBJECT_FILE_DIR = prj.codeforces\CMakeFiles\1330a.dir
+  TARGET_COMPILE_PDB = prj.codeforces\CMakeFiles\1330a.dir\
+  TARGET_PDB = ..\..\..\bin.dbg\1330a.pdb
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 1330a
+
+
+#############################################
+# Link the executable ..\..\..\bin.dbg\1330a.exe
+
+build ..\..\..\bin.dbg\1330a.exe: CXX_EXECUTABLE_LINKER__1330a_Debug prj.codeforces\CMakeFiles\1330a.dir\1330a.cpp.obj
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
+  LINK_LIBRARIES = kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  OBJECT_DIR = prj.codeforces\CMakeFiles\1330a.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = prj.codeforces\CMakeFiles\1330a.dir\
+  TARGET_FILE = ..\..\..\bin.dbg\1330a.exe
+  TARGET_IMPLIB = prj.codeforces\1330a.lib
+  TARGET_PDB = ..\..\..\bin.dbg\1330a.pdb
+
+# =============================================================================
+# Object build statements for EXECUTABLE target 1352a
+
+
+#############################################
+# Order-only phony target for 1352a
+
+build cmake_object_order_depends_target_1352a: phony || prj.codeforces\CMakeFiles\1352a.dir
+
+build prj.codeforces\CMakeFiles\1352a.dir\1352a.cpp.obj: CXX_COMPILER__1352a_Debug C$:\Users\Artem\source\repos\SIDKhanta\misis2024f-24-01-leonov-a-d\prj.codeforces\1352a.cpp || cmake_object_order_depends_target_1352a
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd -std:c++20
+  INCLUDES = -IC:\Users\Artem\source\repos\SIDKhanta\misis2024f-24-01-leonov-a-d\prj.lab
+  OBJECT_DIR = prj.codeforces\CMakeFiles\1352a.dir
+  OBJECT_FILE_DIR = prj.codeforces\CMakeFiles\1352a.dir
+  TARGET_COMPILE_PDB = prj.codeforces\CMakeFiles\1352a.dir\
+  TARGET_PDB = ..\..\..\bin.dbg\1352a.pdb
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 1352a
+
+
+#############################################
+# Link the executable ..\..\..\bin.dbg\1352a.exe
+
+build ..\..\..\bin.dbg\1352a.exe: CXX_EXECUTABLE_LINKER__1352a_Debug prj.codeforces\CMakeFiles\1352a.dir\1352a.cpp.obj
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
+  LINK_LIBRARIES = kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  OBJECT_DIR = prj.codeforces\CMakeFiles\1352a.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = prj.codeforces\CMakeFiles\1352a.dir\
+  TARGET_FILE = ..\..\..\bin.dbg\1352a.exe
+  TARGET_IMPLIB = prj.codeforces\1352a.lib
+  TARGET_PDB = ..\..\..\bin.dbg\1352a.pdb
+
+# =============================================================================
+# Object build statements for EXECUTABLE target 1512c
+
+
+#############################################
+# Order-only phony target for 1512c
+
+build cmake_object_order_depends_target_1512c: phony || prj.codeforces\CMakeFiles\1512c.dir
+
+build prj.codeforces\CMakeFiles\1512c.dir\1512c.cpp.obj: CXX_COMPILER__1512c_Debug C$:\Users\Artem\source\repos\SIDKhanta\misis2024f-24-01-leonov-a-d\prj.codeforces\1512c.cpp || cmake_object_order_depends_target_1512c
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd -std:c++20
+  INCLUDES = -IC:\Users\Artem\source\repos\SIDKhanta\misis2024f-24-01-leonov-a-d\prj.lab
+  OBJECT_DIR = prj.codeforces\CMakeFiles\1512c.dir
+  OBJECT_FILE_DIR = prj.codeforces\CMakeFiles\1512c.dir
+  TARGET_COMPILE_PDB = prj.codeforces\CMakeFiles\1512c.dir\
+  TARGET_PDB = ..\..\..\bin.dbg\1512c.pdb
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 1512c
+
+
+#############################################
+# Link the executable ..\..\..\bin.dbg\1512c.exe
+
+build ..\..\..\bin.dbg\1512c.exe: CXX_EXECUTABLE_LINKER__1512c_Debug prj.codeforces\CMakeFiles\1512c.dir\1512c.cpp.obj
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
+  LINK_LIBRARIES = kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  OBJECT_DIR = prj.codeforces\CMakeFiles\1512c.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = prj.codeforces\CMakeFiles\1512c.dir\
+  TARGET_FILE = ..\..\..\bin.dbg\1512c.exe
+  TARGET_IMPLIB = prj.codeforces\1512c.lib
+  TARGET_PDB = ..\..\..\bin.dbg\1512c.pdb
+
+# =============================================================================
+# Object build statements for EXECUTABLE target 1670b
+
+
+#############################################
+# Order-only phony target for 1670b
+
+build cmake_object_order_depends_target_1670b: phony || prj.codeforces\CMakeFiles\1670b.dir
+
+build prj.codeforces\CMakeFiles\1670b.dir\1670b.cpp.obj: CXX_COMPILER__1670b_Debug C$:\Users\Artem\source\repos\SIDKhanta\misis2024f-24-01-leonov-a-d\prj.codeforces\1670b.cpp || cmake_object_order_depends_target_1670b
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd -std:c++20
+  INCLUDES = -IC:\Users\Artem\source\repos\SIDKhanta\misis2024f-24-01-leonov-a-d\prj.lab
+  OBJECT_DIR = prj.codeforces\CMakeFiles\1670b.dir
+  OBJECT_FILE_DIR = prj.codeforces\CMakeFiles\1670b.dir
+  TARGET_COMPILE_PDB = prj.codeforces\CMakeFiles\1670b.dir\
+  TARGET_PDB = ..\..\..\bin.dbg\1670b.pdb
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 1670b
+
+
+#############################################
+# Link the executable ..\..\..\bin.dbg\1670b.exe
+
+build ..\..\..\bin.dbg\1670b.exe: CXX_EXECUTABLE_LINKER__1670b_Debug prj.codeforces\CMakeFiles\1670b.dir\1670b.cpp.obj
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
+  LINK_LIBRARIES = kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  OBJECT_DIR = prj.codeforces\CMakeFiles\1670b.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = prj.codeforces\CMakeFiles\1670b.dir\
+  TARGET_FILE = ..\..\..\bin.dbg\1670b.exe
+  TARGET_IMPLIB = prj.codeforces\1670b.lib
+  TARGET_PDB = ..\..\..\bin.dbg\1670b.pdb
+
+# =============================================================================
+# Object build statements for EXECUTABLE target 1672c
+
+
+#############################################
+# Order-only phony target for 1672c
+
+build cmake_object_order_depends_target_1672c: phony || prj.codeforces\CMakeFiles\1672c.dir
+
+build prj.codeforces\CMakeFiles\1672c.dir\1672c.cpp.obj: CXX_COMPILER__1672c_Debug C$:\Users\Artem\source\repos\SIDKhanta\misis2024f-24-01-leonov-a-d\prj.codeforces\1672c.cpp || cmake_object_order_depends_target_1672c
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd -std:c++20
+  INCLUDES = -IC:\Users\Artem\source\repos\SIDKhanta\misis2024f-24-01-leonov-a-d\prj.lab
+  OBJECT_DIR = prj.codeforces\CMakeFiles\1672c.dir
+  OBJECT_FILE_DIR = prj.codeforces\CMakeFiles\1672c.dir
+  TARGET_COMPILE_PDB = prj.codeforces\CMakeFiles\1672c.dir\
+  TARGET_PDB = ..\..\..\bin.dbg\1672c.pdb
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 1672c
+
+
+#############################################
+# Link the executable ..\..\..\bin.dbg\1672c.exe
+
+build ..\..\..\bin.dbg\1672c.exe: CXX_EXECUTABLE_LINKER__1672c_Debug prj.codeforces\CMakeFiles\1672c.dir\1672c.cpp.obj
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
+  LINK_LIBRARIES = kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  OBJECT_DIR = prj.codeforces\CMakeFiles\1672c.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = prj.codeforces\CMakeFiles\1672c.dir\
+  TARGET_FILE = ..\..\..\bin.dbg\1672c.exe
+  TARGET_IMPLIB = prj.codeforces\1672c.lib
+  TARGET_PDB = ..\..\..\bin.dbg\1672c.pdb
+
+# =============================================================================
+# Object build statements for EXECUTABLE target 1721b
+
+
+#############################################
+# Order-only phony target for 1721b
+
+build cmake_object_order_depends_target_1721b: phony || prj.codeforces\CMakeFiles\1721b.dir
+
+build prj.codeforces\CMakeFiles\1721b.dir\1721b.cpp.obj: CXX_COMPILER__1721b_Debug C$:\Users\Artem\source\repos\SIDKhanta\misis2024f-24-01-leonov-a-d\prj.codeforces\1721b.cpp || cmake_object_order_depends_target_1721b
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd -std:c++20
+  INCLUDES = -IC:\Users\Artem\source\repos\SIDKhanta\misis2024f-24-01-leonov-a-d\prj.lab
+  OBJECT_DIR = prj.codeforces\CMakeFiles\1721b.dir
+  OBJECT_FILE_DIR = prj.codeforces\CMakeFiles\1721b.dir
+  TARGET_COMPILE_PDB = prj.codeforces\CMakeFiles\1721b.dir\
+  TARGET_PDB = ..\..\..\bin.dbg\1721b.pdb
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 1721b
+
+
+#############################################
+# Link the executable ..\..\..\bin.dbg\1721b.exe
+
+build ..\..\..\bin.dbg\1721b.exe: CXX_EXECUTABLE_LINKER__1721b_Debug prj.codeforces\CMakeFiles\1721b.dir\1721b.cpp.obj
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
+  LINK_LIBRARIES = kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  OBJECT_DIR = prj.codeforces\CMakeFiles\1721b.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = prj.codeforces\CMakeFiles\1721b.dir\
+  TARGET_FILE = ..\..\..\bin.dbg\1721b.exe
+  TARGET_IMPLIB = prj.codeforces\1721b.lib
+  TARGET_PDB = ..\..\..\bin.dbg\1721b.pdb
+
+# =============================================================================
+# Object build statements for EXECUTABLE target 1732b
+
+
+#############################################
+# Order-only phony target for 1732b
+
+build cmake_object_order_depends_target_1732b: phony || prj.codeforces\CMakeFiles\1732b.dir
+
+build prj.codeforces\CMakeFiles\1732b.dir\1732b.cpp.obj: CXX_COMPILER__1732b_Debug C$:\Users\Artem\source\repos\SIDKhanta\misis2024f-24-01-leonov-a-d\prj.codeforces\1732b.cpp || cmake_object_order_depends_target_1732b
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd -std:c++20
+  INCLUDES = -IC:\Users\Artem\source\repos\SIDKhanta\misis2024f-24-01-leonov-a-d\prj.lab
+  OBJECT_DIR = prj.codeforces\CMakeFiles\1732b.dir
+  OBJECT_FILE_DIR = prj.codeforces\CMakeFiles\1732b.dir
+  TARGET_COMPILE_PDB = prj.codeforces\CMakeFiles\1732b.dir\
+  TARGET_PDB = ..\..\..\bin.dbg\1732b.pdb
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 1732b
+
+
+#############################################
+# Link the executable ..\..\..\bin.dbg\1732b.exe
+
+build ..\..\..\bin.dbg\1732b.exe: CXX_EXECUTABLE_LINKER__1732b_Debug prj.codeforces\CMakeFiles\1732b.dir\1732b.cpp.obj
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
+  LINK_LIBRARIES = kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  OBJECT_DIR = prj.codeforces\CMakeFiles\1732b.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = prj.codeforces\CMakeFiles\1732b.dir\
+  TARGET_FILE = ..\..\..\bin.dbg\1732b.exe
+  TARGET_IMPLIB = prj.codeforces\1732b.lib
+  TARGET_PDB = ..\..\..\bin.dbg\1732b.pdb
+
+# =============================================================================
+# Object build statements for EXECUTABLE target 1872a
+
+
+#############################################
+# Order-only phony target for 1872a
+
+build cmake_object_order_depends_target_1872a: phony || prj.codeforces\CMakeFiles\1872a.dir
+
+build prj.codeforces\CMakeFiles\1872a.dir\1872a.cpp.obj: CXX_COMPILER__1872a_Debug C$:\Users\Artem\source\repos\SIDKhanta\misis2024f-24-01-leonov-a-d\prj.codeforces\1872a.cpp || cmake_object_order_depends_target_1872a
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd -std:c++20
+  INCLUDES = -IC:\Users\Artem\source\repos\SIDKhanta\misis2024f-24-01-leonov-a-d\prj.lab
+  OBJECT_DIR = prj.codeforces\CMakeFiles\1872a.dir
+  OBJECT_FILE_DIR = prj.codeforces\CMakeFiles\1872a.dir
+  TARGET_COMPILE_PDB = prj.codeforces\CMakeFiles\1872a.dir\
+  TARGET_PDB = ..\..\..\bin.dbg\1872a.pdb
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 1872a
+
+
+#############################################
+# Link the executable ..\..\..\bin.dbg\1872a.exe
+
+build ..\..\..\bin.dbg\1872a.exe: CXX_EXECUTABLE_LINKER__1872a_Debug prj.codeforces\CMakeFiles\1872a.dir\1872a.cpp.obj
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
+  LINK_LIBRARIES = kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  OBJECT_DIR = prj.codeforces\CMakeFiles\1872a.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = prj.codeforces\CMakeFiles\1872a.dir\
+  TARGET_FILE = ..\..\..\bin.dbg\1872a.exe
+  TARGET_IMPLIB = prj.codeforces\1872a.lib
+  TARGET_PDB = ..\..\..\bin.dbg\1872a.pdb
+
+# =============================================================================
+# Object build statements for EXECUTABLE target 1873b
+
+
+#############################################
+# Order-only phony target for 1873b
+
+build cmake_object_order_depends_target_1873b: phony || prj.codeforces\CMakeFiles\1873b.dir
+
+build prj.codeforces\CMakeFiles\1873b.dir\1873b.cpp.obj: CXX_COMPILER__1873b_Debug C$:\Users\Artem\source\repos\SIDKhanta\misis2024f-24-01-leonov-a-d\prj.codeforces\1873b.cpp || cmake_object_order_depends_target_1873b
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd -std:c++20
+  INCLUDES = -IC:\Users\Artem\source\repos\SIDKhanta\misis2024f-24-01-leonov-a-d\prj.lab
+  OBJECT_DIR = prj.codeforces\CMakeFiles\1873b.dir
+  OBJECT_FILE_DIR = prj.codeforces\CMakeFiles\1873b.dir
+  TARGET_COMPILE_PDB = prj.codeforces\CMakeFiles\1873b.dir\
+  TARGET_PDB = ..\..\..\bin.dbg\1873b.pdb
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 1873b
+
+
+#############################################
+# Link the executable ..\..\..\bin.dbg\1873b.exe
+
+build ..\..\..\bin.dbg\1873b.exe: CXX_EXECUTABLE_LINKER__1873b_Debug prj.codeforces\CMakeFiles\1873b.dir\1873b.cpp.obj
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
+  LINK_LIBRARIES = kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  OBJECT_DIR = prj.codeforces\CMakeFiles\1873b.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = prj.codeforces\CMakeFiles\1873b.dir\
+  TARGET_FILE = ..\..\..\bin.dbg\1873b.exe
+  TARGET_IMPLIB = prj.codeforces\1873b.lib
+  TARGET_PDB = ..\..\..\bin.dbg\1873b.pdb
+
+# =============================================================================
+# Object build statements for EXECUTABLE target 1873c
+
+
+#############################################
+# Order-only phony target for 1873c
+
+build cmake_object_order_depends_target_1873c: phony || prj.codeforces\CMakeFiles\1873c.dir
+
+build prj.codeforces\CMakeFiles\1873c.dir\1873c.cpp.obj: CXX_COMPILER__1873c_Debug C$:\Users\Artem\source\repos\SIDKhanta\misis2024f-24-01-leonov-a-d\prj.codeforces\1873c.cpp || cmake_object_order_depends_target_1873c
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd -std:c++20
+  INCLUDES = -IC:\Users\Artem\source\repos\SIDKhanta\misis2024f-24-01-leonov-a-d\prj.lab
+  OBJECT_DIR = prj.codeforces\CMakeFiles\1873c.dir
+  OBJECT_FILE_DIR = prj.codeforces\CMakeFiles\1873c.dir
+  TARGET_COMPILE_PDB = prj.codeforces\CMakeFiles\1873c.dir\
+  TARGET_PDB = ..\..\..\bin.dbg\1873c.pdb
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 1873c
+
+
+#############################################
+# Link the executable ..\..\..\bin.dbg\1873c.exe
+
+build ..\..\..\bin.dbg\1873c.exe: CXX_EXECUTABLE_LINKER__1873c_Debug prj.codeforces\CMakeFiles\1873c.dir\1873c.cpp.obj
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
+  LINK_LIBRARIES = kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  OBJECT_DIR = prj.codeforces\CMakeFiles\1873c.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = prj.codeforces\CMakeFiles\1873c.dir\
+  TARGET_FILE = ..\..\..\bin.dbg\1873c.exe
+  TARGET_IMPLIB = prj.codeforces\1873c.lib
+  TARGET_PDB = ..\..\..\bin.dbg\1873c.pdb
+
+# =============================================================================
+# Object build statements for EXECUTABLE target 1873d
+
+
+#############################################
+# Order-only phony target for 1873d
+
+build cmake_object_order_depends_target_1873d: phony || prj.codeforces\CMakeFiles\1873d.dir
+
+build prj.codeforces\CMakeFiles\1873d.dir\1873d.cpp.obj: CXX_COMPILER__1873d_Debug C$:\Users\Artem\source\repos\SIDKhanta\misis2024f-24-01-leonov-a-d\prj.codeforces\1873d.cpp || cmake_object_order_depends_target_1873d
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd -std:c++20
+  INCLUDES = -IC:\Users\Artem\source\repos\SIDKhanta\misis2024f-24-01-leonov-a-d\prj.lab
+  OBJECT_DIR = prj.codeforces\CMakeFiles\1873d.dir
+  OBJECT_FILE_DIR = prj.codeforces\CMakeFiles\1873d.dir
+  TARGET_COMPILE_PDB = prj.codeforces\CMakeFiles\1873d.dir\
+  TARGET_PDB = ..\..\..\bin.dbg\1873d.pdb
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 1873d
+
+
+#############################################
+# Link the executable ..\..\..\bin.dbg\1873d.exe
+
+build ..\..\..\bin.dbg\1873d.exe: CXX_EXECUTABLE_LINKER__1873d_Debug prj.codeforces\CMakeFiles\1873d.dir\1873d.cpp.obj
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
+  LINK_LIBRARIES = kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  OBJECT_DIR = prj.codeforces\CMakeFiles\1873d.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = prj.codeforces\CMakeFiles\1873d.dir\
+  TARGET_FILE = ..\..\..\bin.dbg\1873d.exe
+  TARGET_IMPLIB = prj.codeforces\1873d.lib
+  TARGET_PDB = ..\..\..\bin.dbg\1873d.pdb
+
 
 #############################################
 # Utility command for edit_cache
@@ -287,6 +1175,102 @@ build prj.tests\rebuild_cache: phony prj.tests\CMakeFiles\rebuild_cache.util
 # =============================================================================
 # Target aliases.
 
+build 0004a: phony ..\..\..\bin.dbg\0004a.exe
+
+build 0004a.exe: phony ..\..\..\bin.dbg\0004a.exe
+
+build 0006a: phony ..\..\..\bin.dbg\0006a.exe
+
+build 0006a.exe: phony ..\..\..\bin.dbg\0006a.exe
+
+build 0262a: phony ..\..\..\bin.dbg\0262a.exe
+
+build 0262a.exe: phony ..\..\..\bin.dbg\0262a.exe
+
+build 0262b: phony ..\..\..\bin.dbg\0262b.exe
+
+build 0262b.exe: phony ..\..\..\bin.dbg\0262b.exe
+
+build 0263a: phony ..\..\..\bin.dbg\0263a.exe
+
+build 0263a.exe: phony ..\..\..\bin.dbg\0263a.exe
+
+build 0271a: phony ..\..\..\bin.dbg\0271a.exe
+
+build 0271a.exe: phony ..\..\..\bin.dbg\0271a.exe
+
+build 0276a: phony ..\..\..\bin.dbg\0276a.exe
+
+build 0276a.exe: phony ..\..\..\bin.dbg\0276a.exe
+
+build 0339b: phony ..\..\..\bin.dbg\0339b.exe
+
+build 0339b.exe: phony ..\..\..\bin.dbg\0339b.exe
+
+build 0617a: phony ..\..\..\bin.dbg\0617a.exe
+
+build 0617a.exe: phony ..\..\..\bin.dbg\0617a.exe
+
+build 0915a: phony ..\..\..\bin.dbg\0915a.exe
+
+build 0915a.exe: phony ..\..\..\bin.dbg\0915a.exe
+
+build 0978a: phony ..\..\..\bin.dbg\0978a.exe
+
+build 0978a.exe: phony ..\..\..\bin.dbg\0978a.exe
+
+build 0978b: phony ..\..\..\bin.dbg\0978b.exe
+
+build 0978b.exe: phony ..\..\..\bin.dbg\0978b.exe
+
+build 0999a: phony ..\..\..\bin.dbg\0999a.exe
+
+build 0999a.exe: phony ..\..\..\bin.dbg\0999a.exe
+
+build 1330a: phony ..\..\..\bin.dbg\1330a.exe
+
+build 1330a.exe: phony ..\..\..\bin.dbg\1330a.exe
+
+build 1352a: phony ..\..\..\bin.dbg\1352a.exe
+
+build 1352a.exe: phony ..\..\..\bin.dbg\1352a.exe
+
+build 1512c: phony ..\..\..\bin.dbg\1512c.exe
+
+build 1512c.exe: phony ..\..\..\bin.dbg\1512c.exe
+
+build 1670b: phony ..\..\..\bin.dbg\1670b.exe
+
+build 1670b.exe: phony ..\..\..\bin.dbg\1670b.exe
+
+build 1672c: phony ..\..\..\bin.dbg\1672c.exe
+
+build 1672c.exe: phony ..\..\..\bin.dbg\1672c.exe
+
+build 1721b: phony ..\..\..\bin.dbg\1721b.exe
+
+build 1721b.exe: phony ..\..\..\bin.dbg\1721b.exe
+
+build 1732b: phony ..\..\..\bin.dbg\1732b.exe
+
+build 1732b.exe: phony ..\..\..\bin.dbg\1732b.exe
+
+build 1872a: phony ..\..\..\bin.dbg\1872a.exe
+
+build 1872a.exe: phony ..\..\..\bin.dbg\1872a.exe
+
+build 1873b: phony ..\..\..\bin.dbg\1873b.exe
+
+build 1873b.exe: phony ..\..\..\bin.dbg\1873b.exe
+
+build 1873c: phony ..\..\..\bin.dbg\1873c.exe
+
+build 1873c.exe: phony ..\..\..\bin.dbg\1873c.exe
+
+build 1873d: phony ..\..\..\bin.dbg\1873d.exe
+
+build 1873d.exe: phony ..\..\..\bin.dbg\1873d.exe
+
 build complex: phony prj.lab\complex\complex.lib
 
 build complex.lib: phony prj.lab\complex\complex.lib
@@ -314,7 +1298,7 @@ build all: phony prj.codeforces\all prj.lab\all prj.tests\all
 #############################################
 # Folder: C:/Users/Artem/source/repos/SIDKhanta/misis2024f-24-01-leonov-a-d/out/build/x64-Debug/prj.codeforces
 
-build prj.codeforces\all: phony
+build prj.codeforces\all: phony ..\..\..\bin.dbg\0004a.exe ..\..\..\bin.dbg\0006a.exe ..\..\..\bin.dbg\0262a.exe ..\..\..\bin.dbg\0262b.exe ..\..\..\bin.dbg\0263a.exe ..\..\..\bin.dbg\0271a.exe ..\..\..\bin.dbg\0276a.exe ..\..\..\bin.dbg\0339b.exe ..\..\..\bin.dbg\0617a.exe ..\..\..\bin.dbg\0915a.exe ..\..\..\bin.dbg\0978a.exe ..\..\..\bin.dbg\0978b.exe ..\..\..\bin.dbg\0999a.exe ..\..\..\bin.dbg\1330a.exe ..\..\..\bin.dbg\1352a.exe ..\..\..\bin.dbg\1512c.exe ..\..\..\bin.dbg\1670b.exe ..\..\..\bin.dbg\1672c.exe ..\..\..\bin.dbg\1721b.exe ..\..\..\bin.dbg\1732b.exe ..\..\..\bin.dbg\1872a.exe ..\..\..\bin.dbg\1873b.exe ..\..\..\bin.dbg\1873c.exe ..\..\..\bin.dbg\1873d.exe
 
 # =============================================================================
 
