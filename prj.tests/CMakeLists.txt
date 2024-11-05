@@ -1,0 +1,9 @@
+add_executable(complex_test complex_test.cpp)
+add_executable(complex_doctest complex_doctest.cpp)
+target_link_libraries(complex_test complex)
+target_link_libraries(complex_doctest complex)
+
+add_executable(ration_test ration_test.cpp)
+add_executable(ration_doctest ration_doctest.cpp)
+target_link_libraries(ration_test ration)
+target_link_libraries(ration_doctest ration)
