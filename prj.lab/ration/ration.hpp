@@ -5,12 +5,12 @@
 #include <stdexcept>
 
 struct ration {
-    ration() : p(0), q(1) { }  // Конструктор по умолчанию, чтобы рациональное число было 0/1
+    ration() : p(0), q(1) { }  
 
     ration(const ration&) = default;
     ration(ration&&) = default;
 
-    ration(int numerator) : p(numerator), q(1) { }  // Конструктор для целых чисел
+    ration(int numerator) : p(numerator), q(1) { } 
 
     ration(int numerator, int denominator);
 
@@ -38,11 +38,11 @@ struct ration {
     std::istream& readfrom(std::istream& is);
 
 private:
-    void reduce();  // Метод для сокращения дроби
-    int gcd(int a, int b) const;  // Нахождение НОД
+    void reduce();  
+    int gcd(int a, int b) const;  
 
-    int p{ 0 };  // Числитель
-    int q{ 1 };  // Знаменатель
+    int p{ 0 };  
+    int q{ 1 };  
 };
 
 std::ostream& operator<<(std::ostream& os, const ration& r);

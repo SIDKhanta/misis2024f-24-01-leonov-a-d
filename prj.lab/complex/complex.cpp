@@ -31,7 +31,7 @@ complex& complex::operator*=(const complex& other) {
 complex complex::operator/(const complex& other) const {
     double denom = other.re * other.re + other.im * other.im;
     if (denom == 0) {
-        std::cerr << "Деление на 0!!";
+        std::cerr << "Division by zero";
         return complex();
     }
     return complex((re * other.re + im * other.im) / denom, (im * other.re - re * other.im) / denom);

@@ -36,3 +36,4 @@ build/
 doctest/
 *.json
 .vs/
+bin.dbg/
