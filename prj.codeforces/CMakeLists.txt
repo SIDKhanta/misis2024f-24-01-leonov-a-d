@@ -27,3 +27,5 @@ add_executable(1873d 1873d.cpp)
 
 add_executable(0136a 0136a.cpp)
 add_executable(0935b 0935b.cpp)
+
+add_executable(1585a 1585a.cpp)

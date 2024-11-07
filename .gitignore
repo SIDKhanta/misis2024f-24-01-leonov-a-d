@@ -32,8 +32,8 @@
 
 # MyIgnore
 out/
-build/
 doctest/
 *.json
 .vs/
 bin.dbg/
+build/
