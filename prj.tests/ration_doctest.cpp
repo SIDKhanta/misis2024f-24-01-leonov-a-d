@@ -23,18 +23,21 @@ TEST_CASE("[ration] - arithmetic operations") {
 }
 
 TEST_CASE("[ration] - compound assignment operators") {
-    ration r1(1, 2);
     ration r2(1, 3);
 
+    ration r1(1, 2);   
     r1 += r2;
-    CHECK(r1 == ration(5, 6));                
+    CHECK(r1 == ration(5, 6));
 
+    r1 = ration(5, 6);
     r1 -= r2;
-    CHECK(r1 == ration(1, 2));                
+    CHECK(r1 == ration(1, 2));
 
+    r1 = ration(1, 2); 
     r1 *= r2;
-    CHECK(r1 == ration(1, 6));                
+    CHECK(r1 == ration(1, 6));
 
+    r1 = ration(1, 2); 
     r1 /= r2;
-    CHECK(r1 == ration(3, 2));                
+    CHECK(r1 == ration(3, 2));
 }

@@ -37,3 +37,4 @@ doctest/
 .vs/
 bin.dbg/
 build/
+*.md
