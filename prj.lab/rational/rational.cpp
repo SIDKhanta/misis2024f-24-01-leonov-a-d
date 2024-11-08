@@ -1,4 +1,4 @@
-#include "ration.hpp"
+#include "rational.hpp"
 #include <stdexcept>
 #include <windows.h>  
 #include <cstdlib>    
