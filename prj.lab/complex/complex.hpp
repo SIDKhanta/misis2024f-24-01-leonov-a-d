@@ -5,7 +5,7 @@
 
 struct complex {
     complex() = default;
-    
+
     complex(const complex&) = default;
 
     complex(complex&&) = default;

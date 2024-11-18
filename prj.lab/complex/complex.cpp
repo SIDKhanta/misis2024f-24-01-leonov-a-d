@@ -1,4 +1,5 @@
 #include "complex.hpp"
+#include <iostream>
 
 complex complex::operator+(const complex& other) const {
     return complex(re + other.re, im + other.im);

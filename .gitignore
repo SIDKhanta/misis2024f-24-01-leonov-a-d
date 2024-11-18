@@ -34,7 +34,9 @@
 out/
 doctest/
 *.json
-.vs/
 bin.dbg/
 build/
 *.md
+*.webp
+.vs/
+*.opendb
