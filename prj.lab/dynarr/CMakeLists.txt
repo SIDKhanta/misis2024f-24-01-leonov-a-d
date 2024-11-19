@@ -1,0 +1,1 @@
+add_library(dynarr dynarr.cpp dynarr.hpp)

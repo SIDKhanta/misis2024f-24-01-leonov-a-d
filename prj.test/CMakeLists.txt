@@ -7,3 +7,8 @@ add_executable(rational_test rational_test.cpp)
 add_executable(rational_doctest rational_doctest.cpp)
 target_link_libraries(rational_test rational)
 target_link_libraries(rational_doctest rational)
+
+add_executable(dynarr_test dynarr_test.cpp)
+add_executable(dynarr_doctest dynarr_doctest.cpp)
+target_link_libraries(dynarr_test dynarr)
+target_link_libraries(dynarr_doctest dynarr)
