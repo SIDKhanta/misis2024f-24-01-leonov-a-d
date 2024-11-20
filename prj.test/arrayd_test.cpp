@@ -1,4 +1,4 @@
-#include <dynarr/dynarr.hpp>
+#include <arrayd/arrayd.hpp>
 #include <iostream>
 
 int main() {

@@ -1,4 +1,4 @@
-#include "dynarr.hpp"
+#include "arrayd.hpp"
 
 dynarr::dynarr() : data(nullptr), size(0), capacity(0) {}
 
