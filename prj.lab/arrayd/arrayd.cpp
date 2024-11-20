@@ -2,16 +2,16 @@
 
 dynarr::dynarr() : data(nullptr), size(0), capacity(0) {}
 
-dynarr::dynarr(size_t initialCapacity)
-    : data(new int[initialCapacity]), size(0), capacity(initialCapacity) {}
+dynarr::dynarr(ptrdiff_t initialCapacity)
+    : data(new double[initialCapacity]), size(0), capacity(initialCapacity) {}
 
 dynarr::~dynarr() {
     delete[] data;
 }
 
-void dynarr::resize(size_t newCapacity) {
-    int* newData = new int[newCapacity];
-    for (size_t i = 0; i < size; i++) {
+void dynarr::resize(ptrdiff_t newCapacity) {
+    double* newData = new double[newCapacity];
+    for (ptrdiff_t i = 0; i < size; i++) {
         newData[i] = data[i];
     }
     delete[] data;
@@ -19,7 +19,7 @@ void dynarr::resize(size_t newCapacity) {
     capacity = newCapacity;
 }
 
-void dynarr::pushBack(int value) {
+void dynarr::pushBack(double value) {
     if (size == capacity) {
         resize(capacity == 0 ? 1 : capacity * 2);
     }
@@ -33,25 +33,25 @@ void dynarr::popBack() {
     size--;
 }
 
-int dynarr::get(size_t index) const {
-    if (index >= size) {
+double dynarr::get(ptrdiff_t index) const {
+    if (index >= size || index < 0) {
         throw std::out_of_range("Index out of range");
     }
     return data[index];
 }
 
-void dynarr::set(size_t index, int value) {
-    if (index >= size) {
+void dynarr::set(ptrdiff_t index, double value) {
+    if (index >= size || index < 0) {
         throw std::out_of_range("Index out of range");
     }
     data[index] = value;
 }
 
-size_t dynarr::getSize() const {
+ptrdiff_t dynarr::getSize() const {
     return size;
 }
 
-size_t dynarr::getCapacity() const {
+ptrdiff_t dynarr::getCapacity() const {
     return capacity;
 }
 
@@ -63,15 +63,15 @@ void dynarr::clear() {
     size = 0;
 }
 
-int& dynarr::operator[](size_t index) {
-    if (index >= size) {
+double& dynarr::operator[](ptrdiff_t index) {
+    if (index >= size || index < 0) {
         throw std::out_of_range("Index out of range");
     }
     return data[index];
 }
 
-const int& dynarr::operator[](size_t index) const {
-    if (index >= size) {
+const double& dynarr::operator[](ptrdiff_t index) const {
+    if (index >= size || index < 0) {
         throw std::out_of_range("Index out of range");
     }
     return data[index];
