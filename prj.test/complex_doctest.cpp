@@ -1,7 +1,7 @@
 #include <complex/complex.hpp>
 
 #define DOCTEST_CONFIG_IMPLEMENT_WITH_MAIN
-#include "../doctest/doctest.h"
+#include <doctest/doctest.h>
 
 TEST_CASE("[complex] - ctor") {
 	CHECK(complex() == complex(0.0, 0.0));

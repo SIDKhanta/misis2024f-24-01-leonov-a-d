@@ -32,7 +32,6 @@
 
 # MyIgnore
 out/
-doctest/
 *.json
 bin.dbg/
 build/

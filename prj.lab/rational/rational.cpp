@@ -1,20 +1,20 @@
 #include "rational.hpp"
 #include <stdexcept>
-#include <windows.h>  
-#include <cstdlib>    
+#include <windows.h>
+#include <cstdlib>
 
-ration::ration(int numerator, int denominator) : p(numerator), q(denominator) {
+Rational::Rational(int numerator, int denominator) : p(numerator), q(denominator) {
     try {
         if (q == 0) throw std::invalid_argument("Denominator cannot be zero");
         reduce();
     }
     catch (const std::invalid_argument& e) {
         MessageBox(NULL, e.what(), "Error", MB_ICONERROR | MB_OK);
-        exit(EXIT_FAILURE);  
+        exit(EXIT_FAILURE);
     }
 }
 
-int ration::gcd(int a, int b) const {
+int Rational::gcd(int a, int b) const {
     while (b != 0) {
         int temp = b;
         b = a % b;
@@ -23,7 +23,7 @@ int ration::gcd(int a, int b) const {
     return a;
 }
 
-void ration::reduce() {
+void Rational::reduce() {
     int divisor = gcd(p, q);
     p /= divisor;
     q /= divisor;
@@ -33,51 +33,51 @@ void ration::reduce() {
     }
 }
 
-ration ration::operator+(const ration& other) const {
-    return ration(p * other.q + other.p * q, q * other.q);
+Rational Rational::operator+(const Rational& other) const {
+    return Rational(p * other.q + other.p * q, q * other.q);
 }
 
-ration& ration::operator+=(const ration& other) {
+Rational& Rational::operator+=(const Rational& other) {
     p = p * other.q + other.p * q;
     q *= other.q;
     reduce();
     return *this;
 }
 
-ration ration::operator-(const ration& other) const {
-    return ration(p * other.q - other.p * q, q * other.q);
+Rational Rational::operator-(const Rational& other) const {
+    return Rational(p * other.q - other.p * q, q * other.q);
 }
 
-ration& ration::operator-=(const ration& other) {
+Rational& Rational::operator-=(const Rational& other) {
     p = p * other.q - other.p * q;
     q *= other.q;
     reduce();
     return *this;
 }
 
-ration ration::operator*(const ration& other) const {
-    return ration(p * other.p, q * other.q);
+Rational Rational::operator*(const Rational& other) const {
+    return Rational(p * other.p, q * other.q);
 }
 
-ration& ration::operator*=(const ration& other) {
+Rational& Rational::operator*=(const Rational& other) {
     p *= other.p;
     q *= other.q;
     reduce();
     return *this;
 }
 
-ration ration::operator/(const ration& other) const {
+Rational Rational::operator/(const Rational& other) const {
     try {
         if (other.p == 0) throw std::invalid_argument("Division by zero");
-        return ration(p * other.q, q * other.p);
+        return Rational(p * other.q, q * other.p);
     }
     catch (const std::invalid_argument& e) {
         MessageBox(NULL, e.what(), "Error", MB_ICONERROR | MB_OK);
-        exit(EXIT_FAILURE);  
+        exit(EXIT_FAILURE);
     }
 }
 
-ration& ration::operator/=(const ration& other) {
+Rational& Rational::operator/=(const Rational& other) {
     try {
         if (other.p == 0) throw std::invalid_argument("Division by zero");
         p *= other.q;
@@ -87,24 +87,24 @@ ration& ration::operator/=(const ration& other) {
     }
     catch (const std::invalid_argument& e) {
         MessageBox(NULL, e.what(), "Error", MB_ICONERROR | MB_OK);
-        exit(EXIT_FAILURE);  
+        exit(EXIT_FAILURE);
     }
 }
 
-bool ration::operator==(const ration& other) const {
+bool Rational::operator==(const Rational& other) const {
     return (p == other.p) && (q == other.q);
 }
 
-bool ration::operator!=(const ration& other) const {
+bool Rational::operator!=(const Rational& other) const {
     return !(*this == other);
 }
 
-std::ostream& ration::writeto(std::ostream& os) const {
+std::ostream& Rational::writeto(std::ostream& os) const {
     os << p << "/" << q;
     return os;
 }
 
-std::istream& ration::readfrom(std::istream& is) {
+std::istream& Rational::readfrom(std::istream& is) {
     char sep;
     is >> p >> sep >> q;
     try {
@@ -113,15 +113,15 @@ std::istream& ration::readfrom(std::istream& is) {
     }
     catch (const std::invalid_argument& e) {
         MessageBox(NULL, e.what(), "Error", MB_ICONERROR | MB_OK);
-        exit(EXIT_FAILURE); 
+        exit(EXIT_FAILURE);
     }
     return is;
 }
 
-std::ostream& operator<<(std::ostream& os, const ration& r) {
+std::ostream& operator<<(std::ostream& os, const Rational& r) {
     return r.writeto(os);
 }
 
-std::istream& operator>>(std::istream& is, ration& r) {
+std::istream& operator>>(std::istream& is, Rational& r) {
     return r.readfrom(is);
 }

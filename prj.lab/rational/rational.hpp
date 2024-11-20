@@ -1,51 +1,51 @@
-#ifndef RATION_HPP
-#define RATION_HPP
+#ifndef RATIONAL_HPP
+#define RATIONAL_HPP
 
 #include <iostream>
 #include <stdexcept>
 
-struct ration {
-    ration() : p(0), q(1) { }  
+struct Rational {
+    Rational() : p(0), q(1) { }
 
-    ration(const ration&) = default;
-    ration(ration&&) = default;
+    Rational(const Rational&) = default;
+    Rational(Rational&&) = default;
 
-    ration(int numerator) : p(numerator), q(1) { } 
+    Rational(int numerator) : p(numerator), q(1) { }
 
-    ration(int numerator, int denominator);
+    Rational(int numerator, int denominator);
 
-    ration& operator=(const ration&) = default;
-    ration& operator=(ration&&) = default;
+    Rational& operator=(const Rational&) = default;
+    Rational& operator=(Rational&&) = default;
 
-    ~ration() = default;
+    ~Rational() = default;
 
-    ration operator+(const ration& other) const;
-    ration& operator+=(const ration& other);
+    Rational operator+(const Rational& other) const;
+    Rational& operator+=(const Rational& other);
 
-    ration operator-(const ration& other) const;
-    ration& operator-=(const ration& other);
+    Rational operator-(const Rational& other) const;
+    Rational& operator-=(const Rational& other);
 
-    ration operator*(const ration& other) const;
-    ration& operator*=(const ration& other);
+    Rational operator*(const Rational& other) const;
+    Rational& operator*=(const Rational& other);
 
-    ration operator/(const ration& other) const;
-    ration& operator/=(const ration& other);
+    Rational operator/(const Rational& other) const;
+    Rational& operator/=(const Rational& other);
 
-    bool operator==(const ration& other) const;
-    bool operator!=(const ration& other) const;
+    bool operator==(const Rational& other) const;
+    bool operator!=(const Rational& other) const;
 
     std::ostream& writeto(std::ostream& os) const;
     std::istream& readfrom(std::istream& is);
 
 private:
-    void reduce();  
-    int gcd(int a, int b) const;  
+    void reduce();
+    int gcd(int a, int b) const;
 
-    int p{ 0 };  
-    int q{ 1 };  
+    int p{ 0 };
+    int q{ 1 };
 };
 
-std::ostream& operator<<(std::ostream& os, const ration& r);
-std::istream& operator>>(std::istream& is, ration& r);
+std::ostream& operator<<(std::ostream& os, const Rational& r);
+std::istream& operator>>(std::istream& is, Rational& r);
 
 #endif
