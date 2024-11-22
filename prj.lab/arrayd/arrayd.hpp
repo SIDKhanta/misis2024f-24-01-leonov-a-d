@@ -5,18 +5,18 @@
 #include <iostream>
 #include <cstddef> // Äëÿ ptrdiff_t
 
-class dynarr {
+class ArrayD {
 private:
-    double* data;
-    ptrdiff_t size;
-    ptrdiff_t capacity;
+    double* data = 0;
+    ptrdiff_t size = 0;
+    ptrdiff_t capacity = 0;
 
     void resize(ptrdiff_t newCapacity);
 
 public:
-    dynarr();
-    explicit dynarr(ptrdiff_t initialCapacity);
-    ~dynarr();
+    ArrayD();
+    explicit ArrayD(ptrdiff_t initialCapacity);
+    ~ArrayD();
 
     void pushBack(double value);
     void popBack();

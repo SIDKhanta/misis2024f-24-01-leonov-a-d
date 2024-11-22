@@ -19,6 +19,8 @@ struct Rational {
 
     ~Rational() = default;
 
+    Rational operator-() const noexcept;
+
     Rational operator+(const Rational& other) const;
     Rational& operator+=(const Rational& other);
 

@@ -3,37 +3,39 @@
 
 #include <iostream>
 
-struct complex {
-    complex() = default;
+struct Complex {
+    Complex() = default;
 
-    complex(const complex&) = default;
+    Complex(const Complex&) = default;
 
-    complex(complex&&) = default;
+    Complex(Complex&&) = default;
 
-    explicit complex(const double real) : re(real) { }
+    explicit Complex(const double real) : re(real) { }
 
-    complex(double real, double imag) : re(real), im(imag) {}
+    Complex(double real, double imag) : re(real), im(imag) {}
 
-    complex& operator=(const complex&) = default;
+    Complex& operator=(const Complex&) = default;
 
-    complex& operator=(complex&&) = default;
+    Complex& operator=(Complex&&) = default;
 
-    ~complex() = default;
+    ~Complex() = default;
 
-    complex operator+(const complex& other) const;
-    complex& operator+=(const complex& other);
+    Complex operator-() const;
 
-    complex operator-(const complex& other) const;
-    complex& operator-=(const complex& other);
+    Complex operator+(const Complex& other) const;
+    Complex& operator+=(const Complex& other);
 
-    complex operator*(const complex& other) const;
-    complex& operator*=(const complex& other);
+    Complex operator-(const Complex& other) const;
+    Complex& operator-=(const Complex& other);
 
-    complex operator/(const complex& other) const;
-    complex& operator/=(const complex& other);
+    Complex operator*(const Complex& other) const;
+    Complex& operator*=(const Complex& other);
 
-    bool operator==(const complex& other) const;
-    bool operator!=(const complex& other) const;
+    Complex operator/(const Complex& other) const;
+    Complex& operator/=(const Complex& other);
+
+    bool operator==(const Complex& other) const;
+    bool operator!=(const Complex& other) const;
 
     std::ostream& writeto(std::ostream& os) const;
     std::istream& readfrom(std::istream& is);
@@ -42,7 +44,7 @@ struct complex {
     double im{ 0.0 };
 };
 
-std::ostream& operator<<(std::ostream& os, const complex& c);
-std::istream& operator>>(std::istream& is, complex& c);
+std::ostream& operator<<(std::ostream& os, const Complex& c);
+std::istream& operator>>(std::istream& is, Complex& c);
 
 #endif

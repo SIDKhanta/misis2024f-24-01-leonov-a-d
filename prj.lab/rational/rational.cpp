@@ -1,7 +1,9 @@
-#include "rational.hpp"
+#include <rational/rational.hpp>
 #include <stdexcept>
 #include <windows.h>
 #include <cstdlib>
+
+Rational Rational::operator-() const noexcept { return Rational(-p, q); }
 
 Rational::Rational(int numerator, int denominator) : p(numerator), q(denominator) {
     try {

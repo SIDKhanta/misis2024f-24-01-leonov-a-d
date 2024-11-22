@@ -2,7 +2,7 @@
 #include <iostream>
 
 int main() {
-    dynarr arr;
+    ArrayD arr;
 
     std::cout << "Adding elements to the array...\n";
     arr.pushBack(5);
