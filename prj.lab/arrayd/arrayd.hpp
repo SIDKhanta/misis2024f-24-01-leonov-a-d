@@ -3,7 +3,7 @@
 
 #include <stdexcept>
 #include <iostream>
-#include <cstddef> // Äëÿ ptrdiff_t
+#include <cstddef> 
 
 class ArrayD {
 private:
@@ -29,6 +29,10 @@ public:
 
     double& operator[](ptrdiff_t index);
     const double& operator[](ptrdiff_t index) const;
+
+    void Remove(ptrdiff_t index);    
+    void Insert(ptrdiff_t index, double value);
+    void Resize(ptrdiff_t newSize);    
 };
 
 #endif

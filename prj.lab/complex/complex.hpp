@@ -10,7 +10,7 @@ struct Complex {
 
     Complex(Complex&&) = default;
 
-    explicit Complex(const double real) : re(real) { }
+    explicit Complex(const double real) : re(real) {}
 
     Complex(double real, double imag) : re(real), im(imag) {}
 
@@ -43,6 +43,15 @@ struct Complex {
     double re{ 0.0 };
     double im{ 0.0 };
 };
+
+Complex operator+(const Complex& c, double scalar);
+Complex operator+(double scalar, const Complex& c);
+Complex operator-(const Complex& c, double scalar);
+Complex operator-(double scalar, const Complex& c);
+Complex operator*(const Complex& c, double scalar);
+Complex operator*(double scalar, const Complex& c);
+Complex operator/(const Complex& c, double scalar);
+Complex operator/(double scalar, const Complex& c);
 
 std::ostream& operator<<(std::ostream& os, const Complex& c);
 std::istream& operator>>(std::istream& is, Complex& c);
