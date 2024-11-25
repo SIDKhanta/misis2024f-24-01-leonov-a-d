@@ -47,7 +47,7 @@ void ArrayD::set(ptrdiff_t index, double value) {
     data[index] = value;
 }
 
-ptrdiff_t ArrayD::getSize() const {
+ptrdiff_t ArrayD::Size() const {
     return size;
 }
 
