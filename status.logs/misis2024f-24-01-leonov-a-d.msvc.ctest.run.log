@@ -24,12 +24,12 @@ Release/D:/projects/2024-misis-fall/misis2024f-24-01-leonov-a-d/bin.check/doctes
     Start 4: doctest_rational
     Start 5: doctest_rational_io
 3/5 Test #3: doctest_complex_io ...............***Failed    0.01 sec
-4/5 Test #5: doctest_rational_io ..............***Failed    2.24 sec
-5/5 Test #4: doctest_rational .................***Failed    4.34 sec
+4/5 Test #4: doctest_rational .................***Failed    7.47 sec
+5/5 Test #5: doctest_rational_io ..............***Failed    9.28 sec
 
 0% tests passed, 5 tests failed out of 5
 
-Total Test time (real) =   4.35 sec
+Total Test time (real) =   9.30 sec
 
 The following tests FAILED:
 	  1 - doctest_arrayd (Not Run)
