@@ -22,7 +22,7 @@ public:
     void popBack();
     double get(ptrdiff_t index) const;
     void set(ptrdiff_t index, double value);
-    ptrdiff_t Size() const;
+    ptrdiff_t getSize() const;
     ptrdiff_t getCapacity() const;
     bool isEmpty() const;
     void clear();

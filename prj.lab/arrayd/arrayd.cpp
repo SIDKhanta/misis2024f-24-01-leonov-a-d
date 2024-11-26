@@ -47,7 +47,7 @@ void ArrayD::set(ptrdiff_t index, double value) {
     data[index] = value;
 }
 
-ptrdiff_t ArrayD::Size() const {
+ptrdiff_t ArrayD::getSize() const {
     return size;
 }
 
@@ -104,21 +104,21 @@ void ArrayD::Insert(ptrdiff_t index, double value) {
     size++;
 }
 
-void ArrayD::Resize(ptrdiff_t newSize) {
-    if (newSize < 0) {
+void ArrayD::Resize(ptrdiff_t newgetSize) {
+    if (newgetSize < 0) {
         throw std::invalid_argument("New size must be non-negative");
     }
-    if (newSize > capacity) {
-        resize(newSize); 
+    if (newgetSize > capacity) {
+        resize(newgetSize); 
     }
-    if (newSize < size) {
-        size = newSize; 
+    if (newgetSize < size) {
+        size = newgetSize; 
     }
     else {
-        for (ptrdiff_t i = size; i < newSize; ++i) {
+        for (ptrdiff_t i = size; i < newgetSize; ++i) {
             data[i] = 0.0; 
         }
-        size = newSize;
+        size = newgetSize;
     }
 }
 
