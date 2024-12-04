@@ -22,17 +22,17 @@ struct Complex {
 
     Complex operator-() const;
 
-    Complex operator+(const Complex& other) const;
-    Complex& operator+=(const Complex& other);
+    Complex& operator+=(const Complex& rhs) noexcept;
+    Complex& operator+=(const double rhs) noexcept;
 
-    Complex operator-(const Complex& other) const;
-    Complex& operator-=(const Complex& other);
+    Complex& operator-=(const Complex& rhs) noexcept;
+    Complex& operator-=(const double rhs) noexcept;
 
-    Complex operator*(const Complex& other) const;
-    Complex& operator*=(const Complex& other);
+    Complex& operator*=(const Complex& rhs) noexcept;
+    Complex& operator*=(const double rhs) noexcept;
 
-    Complex operator/(const Complex& other) const;
-    Complex& operator/=(const Complex& other);
+    Complex& operator/=(const Complex& rhs);
+    Complex& operator/=(const double rhs);
 
     bool operator==(const Complex& other) const;
     bool operator!=(const Complex& other) const;
@@ -44,14 +44,25 @@ struct Complex {
     double im{ 0.0 };
 };
 
-Complex operator+(const Complex& c, double scalar);
-Complex operator+(double scalar, const Complex& c);
-Complex operator-(const Complex& c, double scalar);
-Complex operator-(double scalar, const Complex& c);
-Complex operator*(const Complex& c, double scalar);
-Complex operator*(double scalar, const Complex& c);
-Complex operator/(const Complex& c, double scalar);
-Complex operator/(double scalar, const Complex& c);
+Complex operator+(const Complex& lhs, const Complex& rhs) noexcept;
+Complex operator+(const Complex& lhs, const double rhs) noexcept;
+Complex operator+(const double lhs, const Complex& rhs) noexcept;
+
+Complex operator-(const Complex& lhs, const Complex& rhs) noexcept;
+Complex operator-(const Complex& lhs, const double rhs) noexcept;
+Complex operator-(const double lhs, const Complex& rhs) noexcept;
+
+Complex operator*(const Complex& lhs, const Complex& rhs) noexcept;
+
+Complex operator*(const Complex& lhs, const double rhs) noexcept;
+
+Complex operator*(const double lhs, const Complex& rhs) noexcept;
+
+Complex operator/(const Complex& lhs, const Complex& rhs);
+
+Complex operator/(const Complex& lhs, const double rhs);
+
+Complex operator/(const double lhs, const Complex& rhs);
 
 std::ostream& operator<<(std::ostream& os, const Complex& c);
 std::istream& operator>>(std::istream& is, Complex& c);
