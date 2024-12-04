@@ -1,1 +1,1 @@
-add_library(arrayd arrayd.cpp arrayd.hpp)
+add_library(arrayt INTERFACE arrayt.hpp)
