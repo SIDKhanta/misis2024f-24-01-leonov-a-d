@@ -1,124 +1,124 @@
 #include <arrayd/arrayd.hpp>
 
-ArrayD::ArrayD() : data(nullptr), size(0), capacity(0) {}
+ArrayD::ArrayD() : data_(nullptr), size_(0), capacity_(0) {}
 
-ArrayD::ArrayD(ptrdiff_t initialCapacity)
-    : data(new double[initialCapacity]), size(0), capacity(initialCapacity) {}
+ArrayD::ArrayD(ptrdiff_t initialcapacity_)
+    : data_(new double[initialcapacity_]), size_(0), capacity_(initialcapacity_) {}
 
 ArrayD::~ArrayD() {
-    delete[] data;
+    delete[] data_;
 }
 
-void ArrayD::resize(ptrdiff_t newCapacity) {
-    double* newData = new double[newCapacity];
-    for (ptrdiff_t i = 0; i < size; i++) {
-        newData[i] = data[i];
+void ArrayD::resize(ptrdiff_t newcapacity_) {
+    double* newdata_ = new double[newcapacity_];
+    for (ptrdiff_t i = 0; i < size_; i++) {
+        newdata_[i] = data_[i];
     }
-    delete[] data;
-    data = newData;
-    capacity = newCapacity;
+    delete[] data_;
+    data_ = newdata_;
+    capacity_ = newcapacity_;
 }
 
 void ArrayD::pushBack(double value) {
-    if (size == capacity) {
-        resize(capacity == 0 ? 1 : capacity * 2);
+    if (size_ == capacity_) {
+        resize(capacity_ == 0 ? 1 : capacity_ * 2);
     }
-    data[size++] = value;
+    data_[size_++] = value;
 }
 
 void ArrayD::popBack() {
-    if (size == 0) {
+    if (size_ == 0) {
         throw std::out_of_range("Array is empty");
     }
-    size--;
+    size_--;
 }
 
 double ArrayD::get(ptrdiff_t index) const {
-    if (index >= size || index < 0) {
+    if (index >= size_ || index < 0) {
         throw std::out_of_range("Index out of range");
     }
-    return data[index];
+    return data_[index];
 }
 
 void ArrayD::set(ptrdiff_t index, double value) {
-    if (index >= size || index < 0) {
+    if (index >= size_ || index < 0) {
         throw std::out_of_range("Index out of range");
     }
-    data[index] = value;
+    data_[index] = value;
 }
 
 ptrdiff_t ArrayD::Size() const {
-    return size;
+    return size_;
 }
 
 ptrdiff_t ArrayD::getCapacity() const {
-    return capacity;
+    return capacity_;
 }
 
 bool ArrayD::isEmpty() const {
-    return size == 0;
+    return size_ == 0;
 }
 
 void ArrayD::clear() {
-    size = 0;
+    size_ = 0;
 }
 
 double& ArrayD::operator[](ptrdiff_t index) {
-    if (index >= size || index < 0) {
+    if (index >= size_ || index < 0) {
         throw std::out_of_range("Index out of range");
     }
-    return data[index];
+    return data_[index];
 }
 
 const double& ArrayD::operator[](ptrdiff_t index) const {
-    if (index >= size || index < 0) {
+    if (index >= size_ || index < 0) {
         throw std::out_of_range("Index out of range");
     }
-    return data[index];
+    return data_[index];
 }
 
 void ArrayD::Remove(ptrdiff_t index) {
-    if (index < 0 || index >= size) {
+    if (index < 0 || index >= size_) {
         throw std::out_of_range("Index out of range");
     }
-    for (ptrdiff_t i = index; i < size - 1; ++i) {
-        data[i] = data[i + 1];
+    for (ptrdiff_t i = index; i < size_ - 1; ++i) {
+        data_[i] = data_[i + 1];
     }
-    size--;
-    if (size < capacity / 4) { 
-        resize(capacity / 2);
+    size_--;
+    if (size_ < capacity_ / 4) { 
+        resize(capacity_ / 2);
     }
 }
 
 void ArrayD::Insert(ptrdiff_t index, double value) {
-    if (index < 0 || index > size) { 
+    if (index < 0 || index > size_) { 
         throw std::out_of_range("Index out of range");
     }
-    if (size == capacity) {
-        resize(capacity == 0 ? 1 : capacity * 2); 
+    if (size_ == capacity_) {
+        resize(capacity_ == 0 ? 1 : capacity_ * 2); 
     }
-    for (ptrdiff_t i = size; i > index; --i) {
-        data[i] = data[i - 1];
+    for (ptrdiff_t i = size_; i > index; --i) {
+        data_[i] = data_[i - 1];
     }
-    data[index] = value;
-    size++;
+    data_[index] = value;
+    size_++;
 }
 
-void ArrayD::Resize(ptrdiff_t newSize) {
-    if (newSize < 0) {
-        throw std::invalid_argument("New size must be non-negative");
+void ArrayD::Resize(ptrdiff_t newsize_) {
+    if (newsize_ < 0) {
+        throw std::invalid_argument("New size_ must be non-negative");
     }
-    if (newSize > capacity) {
-        resize(newSize); 
+    if (newsize_ > capacity_) {
+        resize(newsize_); 
     }
-    if (newSize < size) {
-        size = newSize; 
+    if (newsize_ < size_) {
+        size_ = newsize_; 
     }
     else {
-        for (ptrdiff_t i = size; i < newSize; ++i) {
-            data[i] = 0.0; 
+        for (ptrdiff_t i = size_; i < newsize_; ++i) {
+            data_[i] = 0.0; 
         }
-        size = newSize;
+        size_ = newsize_;
     }
 }
 

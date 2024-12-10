@@ -7,9 +7,9 @@
 
 class ArrayD {
 private:
-    double* data = 0;
-    ptrdiff_t size = 0;
-    ptrdiff_t capacity = 0;
+    double* data_ = 0;
+    ptrdiff_t size_ = 0;
+    ptrdiff_t capacity_ = 0;
 
     void resize(ptrdiff_t newCapacity);
 
