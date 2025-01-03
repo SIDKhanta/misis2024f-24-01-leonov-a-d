@@ -1,181 +1,121 @@
-#ifndef DYNAMICARRAY_HPP
-#define DYNAMICARRAY_HPP
+#pragma once
+#ifndef ARRAYT_ARRAYT_HPP_20241202
+#define ARRAYT_ARRAYT_HPP_20241202
 
-#include <stdexcept>
-#include <iostream>
-#include <cstddef> 
+#include <cstddef>
 #include <memory>
+#include <stdexcept>
 
 template<class T>
 class ArrayT {
-private:
-    std::unique_ptr<T[]> data_;
-    std::ptrdiff_t size_ = 0;
-    std::ptrdiff_t capacity_ = 0;
-
-    void resize(ptrdiff_t newCapacity);
-
 public:
-    ArrayT();
-    explicit ArrayT(ptrdiff_t initialCapacity);
-    ~ArrayT();
+    ArrayT() = default;
+    ArrayT(const ArrayT&);
+    ArrayT(const std::ptrdiff_t size);
+    ~ArrayT() = default;
 
     ArrayT& operator=(const ArrayT&);
 
-    void pushBack(double value);
-    void popBack();
-    double get(ptrdiff_t index) const;
-    void set(ptrdiff_t index, double value);
-    ptrdiff_t Size() const;
-    ptrdiff_t getCapacity() const;
-    bool isEmpty() const;
-    void clear();
+    [[nodiscard]] std::ptrdiff_t Size() const noexcept { return size_; }
+    void Resize(const std::ptrdiff_t size);
+    [[nodiscard]] T& operator[](const std::ptrdiff_t idx);
+    [[nodiscard]] const T& operator[](const std::ptrdiff_t idx) const;
+    void Insert(const std::ptrdiff_t idx, const T& val);
+    void Remove(const std::ptrdiff_t idx);
 
-    double& operator[](ptrdiff_t index);
-    const double& operator[](ptrdiff_t index) const;
-
-    void Remove(ptrdiff_t index);
-    void Insert(ptrdiff_t index, double value);
-    void Resize(ptrdiff_t newSize);
+private:
+    std::ptrdiff_t capacity_ = 0;
+    std::ptrdiff_t size_ = 0;
+    std::unique_ptr<T[]> data_;
 };
 
 template<class T>
-ArrayT<T>::ArrayT(const ArrayT<T>& src) : data_.reset(new T[capacity_]{ T() }), capacity_(scr.size_), size_(capacity_) {}
+ArrayT<T>::ArrayT(const ArrayT<T>& src)
+    : capacity_(src.size_)
+    , size_(capacity_)
+    , data_(std::make_unique<T[]>(src.size_)) {
+    std::copy(src.data_.get(), src.data_.get() + size_, data_.get());
+}
 
 template<class T>
 ArrayT<T>::ArrayT(const std::ptrdiff_t size)
     : capacity_(size)
     , size_(size) {
     if (size_ <= 0) {
-        throw std::invalid_argument("ArrayD::ArrayD - non positive size");
+        throw std::invalid_argument("ArrayT::ArrayT - non positive size");
     }
-    data_.reset(new T[size]{ T() });
+    data_ = std::make_unique<T[]>(size);
 }
 
 template<class T>
-ArrayT<T>::~ArrayT() {
-    delete[] data_;
-}
-
-template<class T>
-void ArrayT<T>::resize(ptrdiff_t newcapacity_) {
-    double* newdata_ = new double[newcapacity_];
-    for (ptrdiff_t i = 0; i < size_; i++) {
-        newdata_[i] = data_[i];
-    }
-    delete[] data_;
-    data_ = newdata_;
-    capacity_ = newcapacity_;
-}
-
-void ArrayT::pushBack(double value) {
-    if (size_ == capacity_) {
-        resize(capacity_ == 0 ? 1 : capacity_ * 2);
-    }
-    data_[size_++] = value;
-}
-
-void ArrayT::popBack() {
-    if (size_ == 0) {
-        throw std::out_of_range("Array is empty");
-    }
-    size_--;
-}
-
-double ArrayT::get(ptrdiff_t index) const {
-    if (index >= size_ || index < 0) {
-        throw std::out_of_range("Index out of range");
-    }
-    return data_[index];
-}
-
-void ArrayT::set(ptrdiff_t index, double value) {
-    if (index >= size_ || index < 0) {
-        throw std::out_of_range("Index out of range");
-    }
-    data_[index] = value;
-}
-
-ptrdiff_t ArrayT::Size() const {
-    return size_;
-}
-
-ptrdiff_t ArrayT::getCapacity() const {
-    return capacity_;
-}
-
-bool ArrayT::isEmpty() const {
-    return size_ == 0;
-}
-
-void ArrayT::clear() {
-    size_ = 0;
-}
-
-double& ArrayT::operator[](ptrdiff_t index) {
-    if (index >= size_ || index < 0) {
-        throw std::out_of_range("Index out of range");
-    }
-    return data_[index];
-}
-
-const double& ArrayT::operator[](ptrdiff_t index) const {
-    if (index >= size_ || index < 0) {
-        throw std::out_of_range("Index out of range");
-    }
-    return data_[index];
-}
-
-void ArrayT::Remove(ptrdiff_t index) {
-    if (index < 0 || index >= size_) {
-        throw std::out_of_range("Index out of range");
-    }
-    for (ptrdiff_t i = index; i < size_ - 1; ++i) {
-        data_[i] = data_[i + 1];
-    }
-    size_--;
-    if (size_ < capacity_ / 4) {
-        resize(capacity_ / 2);
-    }
-}
-
-void ArrayT::Insert(ptrdiff_t index, double value) {
-    if (index < 0 || index > size_) {
-        throw std::out_of_range("Index out of range");
-    }
-    if (size_ == capacity_) {
-        resize(capacity_ == 0 ? 1 : capacity_ * 2);
-    }
-    for (ptrdiff_t i = size_; i > index; --i) {
-        data_[i] = data_[i - 1];
-    }
-    data_[index] = value;
-    size_++;
-}
-
-void ArrayT::Resize(ptrdiff_t newsize_) {
-    if (newsize_ < 0) {
-        throw std::invalid_argument("New size_ must be non-negative");
-    }
-    if (newsize_ > capacity_) {
-        resize(newsize_);
-    }
-    if (newsize_ < size_) {
-        size_ = newsize_;
-    }
-    else {
-        for (ptrdiff_t i = size_; i < newsize_; ++i) {
-            data_[i] = 0.0;
-        }
-        size_ = newsize_;
-    }
-}
-
-ArrayT& ArrayT::operator=(const ArrayT& rhs) {
+ArrayT<T>& ArrayT<T>::operator=(const ArrayT<T>& rhs) {
     if (this != &rhs) {
         Resize(rhs.size_);
-        std::memcpy(data_, rhs.data_, size_ * sizeof(*data_));
+        std::copy(rhs.data_.get(), rhs.data_.get() + size_, data_.get());
     }
     return *this;
 }
-#endif
+
+template<class T>
+T& ArrayT<T>::operator[](const std::ptrdiff_t idx) {
+    if (idx < 0 || size_ <= idx) {
+        throw std::invalid_argument("ArrayD::operator[] - invalid index");
+    }
+    return *(data_.get() + idx);
+}
+
+template<class T>
+const T& ArrayT<T>::operator[](const std::ptrdiff_t idx) const {
+    if (idx < 0 || size_ <= idx) {
+        throw std::invalid_argument("ArrayD::operator[] - invalid index");
+    }
+    return *(data_.get() + idx);
+}
+
+template<class T>
+void ArrayT<T>::Resize(const std::ptrdiff_t size) {
+    if (size < 0) {
+        throw std::invalid_argument("ArrayT::Resize - negative size");
+    }
+    if (capacity_ < size) {
+        auto buf = std::make_unique<T[]>(size);
+        if (0 < size_) {
+            std::copy(data_.get(), data_.get() + size_, buf.get());
+        }
+        std::swap(data_, buf);
+        capacity_ = size;
+    }
+    else {
+        if (size_ < size) {
+            std::fill(data_.get() + size_, data_.get() + size, T());
+        }
+    }
+    size_ = size;
+}
+
+template<class T>
+void ArrayT<T>::Insert(const std::ptrdiff_t idx, const T& val) {
+    if (idx < 0 || size_ < idx) {
+        throw std::invalid_argument("ArrayT::Insert - invalid index");
+    }
+    Resize(size_ + 1);
+    if (idx != Size() - 1) {
+        std::copy_backward(data_.get() + idx,
+            data_.get() + size_ - 1, data_.get() + size_);
+    }
+    data_[idx] = val;
+}
+
+template<class T>
+void ArrayT<T>::Remove(const std::ptrdiff_t idx) {
+    if (idx < 0 || size_ <= idx) {
+        throw std::invalid_argument("ArrayT::operator[] - invalid index");
+    }
+    if (idx != size_ - 1) {
+        std::copy(data_.get() + idx + 1,
+            data_.get() + size_, data_.get() + idx);
+    }
+    Resize(size_ - 1);
+}
+
+#endif // !ARRAYT_ARRAYT_HPP_20241202
