@@ -1,131 +1,95 @@
 #include <arrayd/arrayd.hpp>
 
-ArrayD::ArrayD() : data_(nullptr), size_(0), capacity_(0) {}
+ArrayD::ArrayD(const ArrayD& src)
+    : capacity_(src.size_), size_(src.size_), data_(nullptr) {
+    if (size_ > 0) {
+        data_ = new double[size_];
+        std::memcpy(data_, src.data_, size_ * sizeof(*data_));
+    }
+}
 
-ArrayD::ArrayD(ptrdiff_t initialcapacity_)
-    : data_(new double[initialcapacity_]), size_(0), capacity_(initialcapacity_) {}
+ArrayD::ArrayD(const std::ptrdiff_t size)
+    : capacity_(size), size_(size) {
+    if (size <= 0) {
+        throw std::invalid_argument("ArrayD::ArrayD - non positive size");
+    }
+    data_ = new double[capacity_]();
+}
 
 ArrayD::~ArrayD() {
     delete[] data_;
 }
 
-void ArrayD::resize(ptrdiff_t newcapacity_) {
-    double* newdata_ = new double[newcapacity_];
-    for (ptrdiff_t i = 0; i < size_; i++) {
-        newdata_[i] = data_[i];
-    }
-    delete[] data_;
-    data_ = newdata_;
-    capacity_ = newcapacity_;
-}
-
-void ArrayD::pushBack(double value) {
-    if (size_ == capacity_) {
-        resize(capacity_ == 0 ? 1 : capacity_ * 2);
-    }
-    data_[size_++] = value;
-}
-
-void ArrayD::popBack() {
-    if (size_ == 0) {
-        throw std::out_of_range("Array is empty");
-    }
-    size_--;
-}
-
-double ArrayD::get(ptrdiff_t index) const {
-    if (index >= size_ || index < 0) {
-        throw std::out_of_range("Index out of range");
-    }
-    return data_[index];
-}
-
-void ArrayD::set(ptrdiff_t index, double value) {
-    if (index >= size_ || index < 0) {
-        throw std::out_of_range("Index out of range");
-    }
-    data_[index] = value;
-}
-
-ptrdiff_t ArrayD::Size() const {
-    return size_;
-}
-
-ptrdiff_t ArrayD::getCapacity() const {
-    return capacity_;
-}
-
-bool ArrayD::isEmpty() const {
-    return size_ == 0;
-}
-
-void ArrayD::clear() {
-    size_ = 0;
-}
-
-double& ArrayD::operator[](ptrdiff_t index) {
-    if (index >= size_ || index < 0) {
-        throw std::out_of_range("Index out of range");
-    }
-    return data_[index];
-}
-
-const double& ArrayD::operator[](ptrdiff_t index) const {
-    if (index >= size_ || index < 0) {
-        throw std::out_of_range("Index out of range");
-    }
-    return data_[index];
-}
-
-void ArrayD::Remove(ptrdiff_t index) {
-    if (index < 0 || index >= size_) {
-        throw std::out_of_range("Index out of range");
-    }
-    for (ptrdiff_t i = index; i < size_ - 1; ++i) {
-        data_[i] = data_[i + 1];
-    }
-    size_--;
-    if (size_ < capacity_ / 4) { 
-        resize(capacity_ / 2);
-    }
-}
-
-void ArrayD::Insert(ptrdiff_t index, double value) {
-    if (index < 0 || index > size_) { 
-        throw std::out_of_range("Index out of range");
-    }
-    if (size_ == capacity_) {
-        resize(capacity_ == 0 ? 1 : capacity_ * 2); 
-    }
-    for (ptrdiff_t i = size_; i > index; --i) {
-        data_[i] = data_[i - 1];
-    }
-    data_[index] = value;
-    size_++;
-}
-
-void ArrayD::Resize(ptrdiff_t newsize_) {
-    if (newsize_ < 0) {
-        throw std::invalid_argument("New size_ must be non-negative");
-    }
-    if (newsize_ > capacity_) {
-        resize(newsize_); 
-    }
-    if (newsize_ < size_) {
-        size_ = newsize_; 
-    }
-    else {
-        for (ptrdiff_t i = size_; i < newsize_; ++i) {
-            data_[i] = 0.0; 
-        }
-        size_ = newsize_;
-    }
-}
-
 ArrayD& ArrayD::operator=(const ArrayD& rhs) {
     if (this != &rhs) {
-        Resize(rhs.size_);
-        std::memcpy(data_, rhs.data_, size_ * sizeof(*data_));
+        ArrayD temp(rhs);
+        std::swap(data_, temp.data_);
+        capacity_ = temp.capacity_;
+        size_ = temp.size_;
     }
     return *this;
+}
+
+double ArrayD::operator[](const std::ptrdiff_t idx) const {
+    if (idx < 0 || idx >= size_) {
+        throw std::out_of_range("ArrayD::operator[] - index out of range");
+    }
+    return data_[idx];
+}
+
+double& ArrayD::operator[](const std::ptrdiff_t idx) {
+    if (idx < 0 || idx >= size_) {
+        throw std::out_of_range("ArrayD::operator[] - index out of range");
+    }
+    return data_[idx];
+}
+
+void ArrayD::Resize(const std::ptrdiff_t size) {
+    if (size < 0) {
+        throw std::invalid_argument("ArrayD::Resize - non positive size");
+    }
+
+    if (size > capacity_) {
+        double* new_data = new double[size]();
+        if (data_) {
+            std::memcpy(new_data, data_, size_ * sizeof(double));
+            delete[] data_;
+        }
+        data_ = new_data;
+        capacity_ = size;
+    }
+    else if (size < size_) {
+
+    }
+    else if (size > size_) {
+        std::memset(data_ + size_, 0, (size - size_) * sizeof(double));
+    }
+
+    size_ = size;
+}
+
+void ArrayD::Remove(const std::ptrdiff_t idx) {
+    if (idx < 0 || idx >= size_) {
+        throw std::out_of_range("ArrayD::Remove - index out of range");
+    }
+
+    if (idx != size_ - 1) {
+        std::memmove(data_ + idx, data_ + idx + 1, (size_ - idx - 1) * sizeof(double));
+    }
+
+    Resize(size_ - 1);
+}
+
+void ArrayD::Insert(const std::ptrdiff_t idx, const double val) {
+    if (idx < 0 || idx > size_) {
+        throw std::out_of_range("ArrayD::Insert - index out of range");
+    }
+
+    Resize(size_ + 1);
+
+    if (idx != size_ - 1) {
+        std::memmove(data_ + idx + 1, data_ + idx, (size_ - idx - 1) * sizeof(double));
+    }
+
+    data_[idx] = val;
 }

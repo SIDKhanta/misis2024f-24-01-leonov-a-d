@@ -1,40 +1,32 @@
 #ifndef DYNAMICARRAY_HPP
 #define DYNAMICARRAY_HPP
 
+#include <cstddef>
 #include <stdexcept>
-#include <iostream>
-#include <cstddef> 
+#include <cstring>
+#include <utility>
 
 class ArrayD {
 private:
-    double* data_ = 0;
-    ptrdiff_t size_ = 0;
-    ptrdiff_t capacity_ = 0;
-
-    void resize(ptrdiff_t newCapacity);
+    double* data_ = nullptr;
+    std::ptrdiff_t size_ = 0;
+    std::ptrdiff_t capacity_ = 0;
 
 public:
-    ArrayD();
-    explicit ArrayD(ptrdiff_t initialCapacity);
+    ArrayD() = default;
+    ArrayD(const ArrayD&);
+    ArrayD(const std::ptrdiff_t size);
     ~ArrayD();
 
     ArrayD& operator=(const ArrayD&);
 
-    void pushBack(double value);
-    void popBack();
-    double get(ptrdiff_t index) const;
-    void set(ptrdiff_t index, double value);
-    ptrdiff_t Size() const;
-    ptrdiff_t getCapacity() const;
-    bool isEmpty() const;
-    void clear();
+    [[nodiscard]] std::ptrdiff_t Size() const noexcept { return size_; }
+    [[nodiscard]] double& operator[](const std::ptrdiff_t idx);
+    [[nodiscard]] double operator[](const std::ptrdiff_t idx) const;
 
-    double& operator[](ptrdiff_t index);
-    const double& operator[](ptrdiff_t index) const;
-
-    void Remove(ptrdiff_t index);
-    void Insert(ptrdiff_t index, double value);
-    void Resize(ptrdiff_t newSize);
+    void Insert(const std::ptrdiff_t idx, const double val);
+    void Remove(const std::ptrdiff_t idx);
+    void Resize(const std::ptrdiff_t size);
 };
 
 #endif

@@ -1,8 +1,10 @@
 #ifndef RATIONAL_HPP
 #define RATIONAL_HPP
 
-#include <iostream>
+#include <cstdint>
+#include <iosfwd>
 #include <stdexcept>
+#include <iostream>
 
 struct Rational {
     Rational() : p(0), q(1) { }
