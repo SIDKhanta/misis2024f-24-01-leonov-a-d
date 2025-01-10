@@ -5,65 +5,58 @@
 #include <sstream>
 
 struct Complex {
-    Complex() = default;
-    Complex(const Complex&) = default;
-    Complex(Complex&&) = default;
-    explicit Complex(const double real) : re(real) {}
-    Complex(double real, double imag) : re(real), im(imag) {}
+    double re = 0.0;
+    double im = 0.0;
+    Complex();
+    Complex(const double real);
+    Complex(const double real, const double imaginary);
+
     Complex& operator=(const Complex&) = default;
-    Complex& operator=(Complex&&) = default;
     ~Complex() = default;
 
-    Complex operator-() const;
+    bool operator==(const Complex& a) const noexcept;
+    bool operator!=(const Complex& a) const noexcept;
+    Complex operator-() const noexcept;
 
-    Complex& operator+=(const Complex& rhs) noexcept;
-    Complex& operator+=(const double rhs) noexcept;
+    Complex& operator+=(const Complex& a);
+    Complex& operator-=(const Complex& a);
+    Complex& operator*=(const Complex& a);
+    Complex& operator/=(const Complex& a);
 
-    Complex& operator-=(const Complex& rhs) noexcept;
-    Complex& operator-=(const double rhs) noexcept;
+    Complex& operator+=(const double b);
+    Complex& operator-=(const double b);
+    Complex& operator*=(const double b);
+    Complex& operator/=(const double b);
 
-    Complex& operator*=(const Complex& rhs) noexcept;
-    Complex& operator*=(const double rhs) noexcept;
-
-    Complex& operator/=(const Complex& rhs);
-    Complex& operator/=(const double rhs);
-
-    bool operator==(const Complex& other) const;
-    bool operator!=(const Complex& other) const;
-
-    std::ostream& writeto(std::ostream& os) const;
-    std::istream& readfrom(std::istream& is);
-
-    double re{ 0.0 };
-    double im{ 0.0 };
+    std::ostream& output(std::ostream& out);
+    std::istream& input(std::istream& in);
 
     static const char leftbr{ '{' };
     static const char sep{ ',' };
     static const char rightbr{ '}' };
 };
 
-Complex operator+(const Complex& lhs, const Complex& rhs) noexcept;
-Complex operator+(const Complex& lhs, const double rhs) noexcept;
-Complex operator+(const double lhs, const Complex& rhs) noexcept;
+Complex operator+(const Complex& a, const Complex& b);
+Complex operator-(const Complex& a, const Complex& b);
+Complex operator*(const Complex& a, const Complex& b);
+Complex operator/(const Complex& a, const Complex& b);
 
-Complex operator-(const Complex& lhs, const Complex& rhs) noexcept;
-Complex operator-(const Complex& lhs, const double rhs) noexcept;
-Complex operator-(const double lhs, const Complex& rhs) noexcept;
+Complex operator+(const Complex& a, const double b);
+Complex operator-(const Complex& a, const double b);
+Complex operator*(const Complex& a, const double b);
+Complex operator/(const Complex& a, const double b);
 
-Complex operator*(const Complex& lhs, const Complex& rhs) noexcept;
-Complex operator*(const Complex& lhs, const double rhs) noexcept;
-Complex operator*(const double lhs, const Complex& rhs) noexcept;
+Complex operator+(const double b, const Complex& a);
+Complex operator-(const double b, const Complex& a);
+Complex operator*(const double b, const Complex& a);
+Complex operator/(const double b, const Complex& a);
 
-Complex operator/(const Complex& lhs, const Complex& rhs) noexcept;
-Complex operator/(const Complex& lhs, const double rhs) noexcept;
-Complex operator/(const double lhs, const Complex& rhs) noexcept;
-
-inline std::ostream& operator<<(std::ostream& os, Complex& a) {
-    return a.writeto(os);
+inline std::ostream& operator<<(std::ostream& out, Complex& a) {
+    return a.output(out);
 }
 
-inline std::istream& operator>>(std::istream& is, Complex& a) {
-    return a.readfrom(is);
+inline std::istream& operator>>(std::istream& in, Complex& a) {
+    return a.input(in);
 }
 
 #endif
